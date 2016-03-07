@@ -1,0 +1,9 @@
+/* set alternating row background color */
+
+.t-row:nth-child(odd) {
+    background: #eee;
+}
+
+.RadPanelBar .rpRootGroup {
+    border: 0;
+}
