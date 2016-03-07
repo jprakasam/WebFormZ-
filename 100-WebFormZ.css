@@ -1,9 +1,20 @@
 /* set alternating row background color */
 
+.t-row {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+}
+
 .t-row:nth-child(odd) {
     background: #eee;
 }
 
 .RadPanelBar .rpRootGroup {
     border: 0;
+}
+
+/* input */
+
+.RadInput {
+    width: auto !important;
 }
