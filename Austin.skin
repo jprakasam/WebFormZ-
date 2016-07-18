@@ -1,4 +1,4 @@
-﻿<%@ Register TagPrefix="asi" TagName="PageNavR" Src="~/AsiCommon/Controls/Navigation/PageNavR.ascx" %>
+<%@ Register TagPrefix="asi" TagName="PageNavR" Src="~/AsiCommon/Controls/Navigation/PageNavR.ascx" %>
 <%@ Register TagPrefix="asi" TagName="SubNavigation" Src="~/AsiCommon/Controls/Navigation/SubNavigation.ascx" %>
 <%@ Register Assembly="Asi.Web" Namespace="Asi.Web.UI.Common.BSA" TagPrefix="asibsa" %>
 
@@ -110,16 +110,34 @@
 <asiweb:BusinessLabel runat="server" />
 <asiweb:BusinessTextBox runat="server" />
 
+<asp:Label runat="server" CssClass="Label" />
+
+<%--
+
 <telerik:RadTextBox runat="server" EnableEmbeddedSkins="false" EnableSingleInputRendering="false" Skin=""></telerik:RadTextBox>
+
 <telerik:RadNumericTextBox runat="server" EnableEmbeddedSkins="false" EnableSingleInputRendering="false" Skin="">
 </telerik:RadNumericTextBox>
+
 <telerik:RadDropDownList runat="server" EnableEmbeddedSkins="false">
 </telerik:RadDropDownList>
-<telerik:RadPanelBar runat="server" EnableEmbeddedSkins="false">
+
+<telerik:RadPanelBar runat="server" EnableEmbeddedBaseStylesheet="false" EnableEmbeddedSkins="false" PreventCollapse="true" AllowCollapseAllItems="false">
  <Items>
  </Items>
 </telerik:RadPanelBar> 
-<telerik:RadButton runat="server" EnableEmbeddedSkins="false" EnableBrowserButtonStyle="true" EnableEmbeddedBaseStylesheet="false" Skin="" CssClass="btn"></telerik:RadButton>
+
+<telerik:RadWizard RenderMode="Lightweight" runat="server" EnableEmbeddedBaseStylesheet="false" EnableEmbeddedSkins="false">
+    <WizardSteps>
+    </WizardSteps>
+</telerik:RadWizard>
+
+<telerik:RadButton runat="server" EnableEmbeddedSkins="false" RenderMode="Lightweight" EnableBrowserButtonStyle="false" EnableEmbeddedBaseStylesheet="false" Skin="WFZButton" CssClass="TextButton PrimaryButton"></telerik:RadButton> 
+
+ --%>
+
+<telerik:RadWizard RenderMode="Mobile" runat="server" EnableEmbeddedBaseStylesheet="false" EnableEmbeddedSkins="false">
+</telerik:RadWizard>
 
 <asiweb:SmartControl runat="server" />
 <asiweb:StyledButton runat="server" />

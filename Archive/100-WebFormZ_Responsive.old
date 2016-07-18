@@ -1,30 +1,25 @@
 /* wrapper - over ride display: table setting on wrapper which breaks responsive tables / amend footer style; */
-
-.wrapper,
-.footer {
+.wrapper,.footer {
     display: block !important;
     width: 100%;
 }
 
-
 /* labels */
-
 label {
     font-weight: 500;
 }
 
 .control-label {
-    /* text-align: right; */
+/* text-align: right; */
     display: block;
     padding-top: 2px;
-    /*font-size: 16px !important;*/
+/*font-size: 16px !important;*/
     line-height: 1.6 !important;
 }
 
 @media (max-width: 768px) {
-    label,
-    .Label {
-        /*margin-left: 0;*/
+    label,.Label {
+    /*margin-left: 0;*/
     }
 }
 
@@ -32,9 +27,8 @@ label {
     padding-left: 7px !important;
 }
 
-.WFZRow > div label[id*=Form].control-label.Required {
+#MainHtml label.control-label.Required {
     padding-left: 15px !important;
-    background: none !important;
 }
 
 .control-label.Required:before {
@@ -45,9 +39,7 @@ label {
     left: 15px;
 }
 
-
 /* Info and info required */
-
 .WFZRow .Info {
     font-size: 1.3rem;
     padding-left: 15px;
@@ -62,18 +54,14 @@ label {
     left: 15px;
 }
 
-
-/*.RadForm_Silk.RadForm.rfdLabel label, 
+/*.RadForm_Silk.RadForm.rfdLabel label,
 .RadForm_Silk.RadForm.rfdLabel .rfdAspLabel {
     font-size: inherit !important;
 }*/
-
-
 /* read only fields */
-
 span[id*="BusinessLabel"].Important {
-    color: rgba(0, 0, 0, 0.5);
-    background-color: rgba(250, 250, 250, 0.9);
+    color: rgba(0,0,0,0.5);
+    background-color: rgba(250,250,250,0.9);
     opacity: .8;
     display: block;
     min-height: 33px;
@@ -83,16 +71,12 @@ span[id*="BusinessLabel"].Important {
     border: 1px solid #f2f2f2;
 }
 
-
 /* contact info */
-
 div[id*="SummaryRadPanelBar"] > ul {
     background: #f4f5ed;
 }
 
-
 /* headings */
-
 a.rpLink {
     padding: 6px 8px;
     border-bottom: 1px dotted #ddd !important;
@@ -104,8 +88,8 @@ span.rpText {
     line-height: 1.45em;
     font-size: 170%;
     padding: 0 !important;
-    font-family: Raleway, Verdana, sans-serif;
-    /*font-weight: 200;
+    font-family: Raleway,Verdana,sans-serif;
+/*font-weight: 200;
     color: #424242;*/
 }
 
@@ -114,40 +98,33 @@ span.rpOut {
     padding-bottom: 0 !important;
 }
 
-
 /* tool tips */
-
 input[id*="Tooltip"] {
     margin: 4px 0 0 0;
     display: block;
     padding: 0;
 }
 
-
 /* errors */
-
 .ValidationError {
     display: block;
     font-size: 1.3rem;
     padding: 5px 0 !important;
 }
 
-.RadPanelBar_Default .rpTemplate,
-.RadWizard_Default {
-    /* font-size: inherit !important; */
+.RadPanelBar_Default .rpTemplate,.RadWizard_Default {
+/* font-size: inherit !important; */
 }
 
 .RadUpload {
     width: auto !important;
 }
 
-.RadInput_Default,
-.RadInputMgr_Default {
+.RadInput_Default,.RadInputMgr_Default {
     font-size: inherit;
 }
 
-div[id*="Wfz"].t-row,
-div[id*="Wfz"] .t-row {
+div[id*="Wfz"].t-row,div[id*="Wfz"] .t-row {
     margin: 0 0 15px;
 }
 
@@ -159,11 +136,9 @@ div[id*="Wfz"] span.rpExpandHandle {
     border-color: transparent !important;
 }
 
-
 /*div[id*="Wfz"] .RadInput {
     width: auto !important;
 }*/
-
 span[id*="RadTextBox_wrapper"],
 span[id*="RadTextArea_wrapper"] {
     width: 100% !important;
@@ -174,12 +149,10 @@ span[id*="RadNumericTextBox"] {
 }
 
 div[id*="Wfz"] select,
-div[id*="Wfz"] textarea,
-div[id*="Wfz"] .riTextBox,
+div[id*="Wfz"] textarea,div[id*="Wfz"] .riTextBox,
 div[id*="Wfz"] input[type="datetime"],
 div[id*="Wfz"] input[type="date"],
-div[id*="Wfz"] textarea,
-div[id*="Wfz"] fieldset,
+div[id*="Wfz"] textarea,div[id*="Wfz"] fieldset,
 div[id*="Wfz"] input[type="email"],
 div[id*="Wfz"] input[type="password"],
 div[id*="Wfz"] input[type="url"],
@@ -195,11 +168,8 @@ div[id*="Wfz"] input[type="tel"] {
     box-shadow: none;
 }
 
-
 /* group */
-
-.RadPanelBar .rpSlide,
-.RadPanelBar_Default .rpGroup {
+.RadPanelBar .rpSlide,.RadPanelBar_Default .rpGroup {
     height: auto !important;
 }
 
@@ -208,59 +178,42 @@ div[id*="Wfz"] input[type="tel"] {
     color: black;
 }
 
-
 /*table[id*="RadioButtonList"] input[type="radio"],
 span[id*="CheckBox"] input[type="checkbox"] {
     vertical-align: middle !important;
 }*/
-
-table[id*="RadioButtonList"] td,
-span[class*="CheckBox"] td {
+table[id*="RadioButtonList"] td,span[class*="CheckBox"] td {
     padding: 2px;
 }
 
-table[id*="RadioButtonList"] label,
-span[class*="CheckBox"] label {
+table[id*="RadioButtonList"] label,span[class*="CheckBox"] label {
     margin-left: 10px;
     line-height: 18px !important;
 }
 
-
 /*span[id*="RadTextArea_wrapper"] {
     display: block;
 }*/
-
-
 /* validation errors */
-
-
 /* span.ValidationError:last-child {
     display: block !important;
 } */
-
-
 /* multi instance table */
-
 .rgCommandCell {
     padding: 7px 12px !important;
 }
 
-
 /* responsive */
-
 @media (max-width: 468px) {
-    .RadInput,
-    .RadComboBox {
+    .RadInput,.RadComboBox {
         width: 100% !important;
     }
 }
-
 
 /*.table-responsive {
     min-height: .01%;
     overflow-x: auto;
 }*/
-
 @media screen and (max-width: 767px) {
     /*  .table-responsive {
             width: 100% !important;
@@ -280,59 +233,52 @@ span[class*="CheckBox"] label {
         .table-responsive > .table > tfoot > tr > td {
             white-space: nowrap;
         }*/
+
 }
 
-
-/*.table-responsive table { 
-  width: 100%; 
+/*.table-responsive table {
+  width: 100%;
   border-collapse: collapse;
 }
 */
-
-
 /* Zebra striping */
 
-
 }
+
 .table-responsive tr:nth-of-type(odd) {
     background: #eee;
 }
+
 .table-responsive th {
     background: #333;
     color: #fff;
     font-weight: 700;
 }
-.table-responsive td,
-.table-responsive th {
+
+.table-responsive td,.table-responsive th {
     padding: 6px;
     border: 1px solid #ccc;
     text-align: left;
 }
-@media only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px) {
-    .table-responsive table,
-    .table-responsive thead,
-    .table-responsive tbody,
-    .table-responsive th,
-    .table-responsive td,
-    .table-responsive tr {
+
+@media only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px) {
+    .table-responsive table,.table-responsive thead,.table-responsive tbody,.table-responsive th,.table-responsive td,.table-responsive tr {
         display: block;
     }
-    
+
     .table-responsive thead th {
         position: absolute;
         top: -9999px;
         left: -9999px;
     }
+
     /*.table-responsive tr { border: 1px solid #eee; }*/
-    
-    .table-responsive td,
-    .table-responsive .rgAltRow td {
+    .table-responsive td,.table-responsive .rgAltRow td {
         border: none;
         border-bottom: 1px solid #fff !important;
         text-align: right;
     }
-    
+
     .table-responsive td:before {
         float: left;
         padding-right: 20px;
@@ -351,10 +297,8 @@ span[class*="CheckBox"] label {
     padding: 5px 10px !important;
     line-height: 1.8em !important;
     /* vertical-align: middle; */
-    
     box-sizing: border-box;
 }
-
 /*
 span.rddlIcon {
     font-size: 1.3rem !important;
@@ -372,44 +316,54 @@ span.rddlIcon {
     padding: 0 !important;
     height: 35px !important;
 }*/
+
 .RadDropDownList {
     font-size: 1.3rem !important;
     width: 70% !important;
 }
-.rddlSlide {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
+
+.rddlSlide {box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);}
+
 .rddlPopup {
     border: 0 !important;
     font-size: 1.3rem !important;
 }
+
+
 .RadDropDownList .rddlIcon:before {
     top: 0;
     font-size: 1.3rem !important;
 }
+
 li.rddlItem.rddlItemSelected {
     background: #dc4f00;
 }
+
 span.rddlInner.rddlFocused {
     border-color: #dc4f00;
     background-color: #dc4f00;
 }
+
 .ruFakeInput {
     height: 35px !important;
     box-sizing: border-box !important;
 }
+
 .RadUpload .ruBrowse,
 .RadUpload .ruButton {
     padding: 5px 10px !important;
     height: 35px !important;
 }
+
 .RadUpload .ruButton {
     border: none !important;
 }
+
 .RadUpload .ruUploadSuccess {
     font-size: 1.3rem;
     padding-right: 4px;
 }
+
 input.ruButton.ruBrowse {
     height: 35px !important;
 }
@@ -418,7 +372,6 @@ input.ruButton.ruBrowse {
 .RadComboBox .rcbInner {
     padding: 5px 10px !important;
     /* box-sizing: border-box; */
-    
     height: 35px !important;
     border: 1px solid #ccc;
 }
@@ -435,11 +388,13 @@ div[id*=Wfz__Finder] {
     display: inline-block;
     vertical-align: top;
 }
+
 input[id*=FindButtonControl] {
     padding: 5px 10px;
     height: 35px;
     margin-left: 4px !important;
 }
+
 @media (max-width: 467px) {
     input[id*=FindButtonControl] {
         margin: 4px 0 0 !important;
@@ -447,13 +402,12 @@ input[id*=FindButtonControl] {
 }
 
 /* picker */
-.RadPicker .rcCalPopup,
-.RadPicker .rcTimePopup {
+.RadPicker .rcCalPopup,.RadPicker .rcTimePopup {
     background: none !important;
     border: 0 !important;
 }
-.RadPicker .rcCalPopup:hover,
-.RadPicker .rcTimePopup:hover {
+
+.RadPicker .rcCalPopup:hover,.RadPicker .rcTimePopup:hover {
     color: #666;
     background: none;
 }
@@ -472,71 +426,65 @@ input[id*=FindButtonControl] {
 }
 
 /* list box */
+
 .RadComboBox .rcbEmptyMessage {
     font-style: normal !important;
 }
+
 .RadComboBox_MetroTouch .rcbFocused .rcbActionButton {
     border-color: #dc4f00;
     background-color: #dc4f00;
 }
-.RadForm_Silk.RadForm.rfdLabel label,
-.RadForm_Silk.RadForm.rfdLabel .rfdAspLabel {
+
+.RadForm_Silk.RadForm.rfdLabel label, .RadForm_Silk.RadForm.rfdLabel .rfdAspLabel {
     line-height: 16px !important
 }
 
 /* buttons */
-button.rwzButton,
-input[value=Save],
-input.Save,
-input.SaveAndNew,
-input.Close,
-input[value=Delete],
-input[id*=FormButtonSubmit] {
+
+button.rwzButton, input[value=Save] {
     text-decoration: none;
     color: #fff;
     background-color: #dc4f00;
     text-align: center;
     letter-spacing: .5px;
     transition: .2s ease-out;
+    cursor: pointer;
     border: none !important;
     border-radius: 2px;
     display: inline-block;
     height: 36px;
-    line-height: 36px !important;
+    line-height: 36px;
     outline: 0;
     padding: 0 2rem;
-    font-size: 1.3rem !important;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    min-width: 8em;
+    min-width: 8em
 }
-input[value=Save],
-input[value=Delete],
-input[id*=FormButtonSubmit] {
-    background: none !important;
-    color: #000 !important;
+
+input[value=Save] {
+    width: 100%;
+    background: none;
+    color: black;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
 }
-input[id*=FormButtonSubmit] {
-    width: 100% !important;
-    background: #dc4f00 !important;
-    color: #fff !important;
-}
-input[type=button],
-button {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
+
+button { box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);}
+
 button.rwzButton.rwzPrevious {
     background-color: transparent;
     color: black;
 }
+
 button.rwzButton.rwzPrevious:hover {
     background-color: #dc4f00;
     color: #fff;
 }
+
 button.rwzButton:hover {
-    background-color: #b34000;
+       background-color: #b34000; }
 }
 
-}
 .wfz-form-footer input[value=Submit] {
     background: #DC4F00 !important;
     border: #DC4F00 !important;
@@ -554,24 +502,21 @@ button.rwzButton:hover {
     text-align: center;
 }
 
-/* 
-
 .wfz-form-footer .rfdSkinnedButton {
-    border: #dc4f00 !important;
+/* border: #dc4f00 !important;
     background: #dc4f00 !important;
     color: #fff !important;
     box-shadow: none !important;
-    font-size: inherit !important;
+    font-size: inherit !important; */
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     label[id*="SaveButton_Caption"],
     label[id*="DeleteButton_Caption"] {
         display: none;
     }
-}
+}  */
 
-*/
 @media (min-width: 768px) {
     .wfz-form-footer {
         text-align: right;
@@ -579,69 +524,84 @@ button.rwzButton:hover {
 }
 
 /* buttons*/
-.RadWizard,
-.RadWizard .rwzBreadCrumb,
-.RadWizard .rwzProgressBar,
-.RadWizard .rwzContent {
+
+input[value=Submit] {
+    background: #dc4f00;
+    border: #dc4f00;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    height: 35px;
+    font-weight: bold;
+    color: white;
+}
+
+.RadWizard,.RadWizard .rwzBreadCrumb,.RadWizard .rwzProgressBar,.RadWizard .rwzContent {
     box-sizing: border-box;
 }
+
 .RadWizard {
     min-width: 19.2307692308em;
     overflow: hidden;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
 }
-.RadWizard .rwzUL,
-.RadWizard .rwzNav {
+
+.RadWizard .rwzUL,.RadWizard .rwzNav {
     margin: 0;
     padding: 0;
 }
-.RadWizard .rwzHeader.rwzHidden,
-.RadWizard .rwzBreadCrumb.rwzHidden,
-.RadWizard .rwzProgressBar.rwzHidden,
-.RadWizard .rwzLI.rwzHidden,
-.RadWizard .rwzButton.rwzHidden,
-.RadWizard .rwzCancelWrapper.rwzHidden {
+
+.RadWizard .rwzHeader.rwzHidden,.RadWizard .rwzBreadCrumb.rwzHidden,.RadWizard .rwzProgressBar.rwzHidden,.RadWizard .rwzLI.rwzHidden,.RadWizard .rwzButton.rwzHidden,.RadWizard .rwzCancelWrapper.rwzHidden {
     display: none;
 }
+
 .RadWizard .rwzUL {
     overflow: hidden;
     overflow-x: auto;
 }
+
 .RadWizard .rwzText {
-    /* display:inline-block; */
-    /* max-width:100%; */
-    /* vertical-align:middle; */
-    /* overflow:hidden; */
+/* display:inline-block; */
+/* max-width:100%; */
+/* vertical-align:middle; */
+/* overflow:hidden; */
     -ms-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
-    /* text-overflow:ellipsis */
+/* text-overflow:ellipsis */
 }
+
 .RadWizard .rwzBreadCrumb {
     width: 100%;
     overflow: hidden;
 }
+
 .RadWizard .rwzBreadCrumb .rwzLink {
     cursor: pointer;
 }
+
 .RadWizard .rwzBreadCrumb .rwzDisabled .rwzLink {
     cursor: default;
 }
+
 .RadWizard .rwzBreadCrumb .rwzLast .rwzLink:before {
     display: none;
 }
+
 .RadWizard .rwzBreadCrumb.rwzExpandedStepsButtons .rwzUL {
     width: 100%;
     display: table;
     table-layout: fixed;
 }
+
 .RadWizard .rwzBreadCrumb.rwzExpandedStepsButtons .rwzLI {
     float: none;
     display: table-cell;
 }
+
 .RadWizard .rwzBreadCrumb.rwzExpandedStepsButtons .rwzPager {
     display: none;
 }
+
 .RadWizard .rwzBreadCrumb .rwzPager {
     height: 100%;
     position: absolute;
@@ -649,6 +609,7 @@ button.rwzButton:hover {
     top: 0;
     z-index: 3;
 }
+
 .RadWizard .rwzBreadCrumb .rwzPager .rwzCallout {
     width: 1em;
     height: 3.23076923077em;
@@ -659,103 +620,122 @@ button.rwzButton:hover {
     /*font-size: 1.1rem;*/
     font-size: 10.74449999999px;
 }
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before,
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
+
+.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before,.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
     content: "";
     position: absolute;
     width: 1.92307692308em;
     height: 1.92307692308em;
     left: 0;
-    -moz-transform: rotate(45deg) skew(15deg, 15deg);
-    -webkit-transform: rotate(45deg) skew(15deg, 15deg);
-    -ms-transform: rotate(45deg) skew(15deg, 15deg);
-    -o-transform: rotate(45deg) skew(15deg, 15deg);
-    transform: rotate(45deg) skew(15deg, 15deg);
+    -moz-transform: rotate(45deg) skew(15deg,15deg);
+    -webkit-transform: rotate(45deg) skew(15deg,15deg);
+    -ms-transform: rotate(45deg) skew(15deg,15deg);
+    -o-transform: rotate(45deg) skew(15deg,15deg);
+    transform: rotate(45deg) skew(15deg,15deg);
     border-width: 1px;
     border-style: solid;
 }
+
 .RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before {
     top: -1.15384615385em;
 }
+
 .RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
     top: 2.23076923077em;
 }
-.RadWizard .rwzBreadCrumb.rwzLeftImages .rwzImage,
-.RadWizard .rwzBreadCrumb.rwzRightImages .rwzImage {
+
+.RadWizard .rwzBreadCrumb.rwzLeftImages .rwzImage,.RadWizard .rwzBreadCrumb.rwzRightImages .rwzImage {
     vertical-align: middle;
     display: inline-block;
     margin-left: -30px;
 }
-.RadWizard .rwzBreadCrumb.rwzLeftImages span.rwzImage,
-.RadWizard .rwzBreadCrumb.rwzRightImages span.rwzImage {
+
+.RadWizard .rwzBreadCrumb.rwzLeftImages span.rwzImage,.RadWizard .rwzBreadCrumb.rwzRightImages span.rwzImage {
     width: 16px;
     height: 16px;
 }
+
 .RadWizard .rwzBreadCrumb.rwzLeftImages .rwzLink {
     padding-left: 3.46153846154em;
 }
+
 .RadWizard .rwzBreadCrumb.rwzLeftImages .rwzImage {
     margin: 0 3px 0 -25px;
 }
+
 .RadWizard .rwzBreadCrumb.rwzRightImages .rwzLink {
     padding-right: 3.46153846154em;
 }
+
 .RadWizard .rwzBreadCrumb.rwzRightImages .rwzImage {
     margin: 0 -25px 0 -3px;
 }
+
 .RadWizard .rwzProgressBar {
     width: 100%;
     top: 3.84615384615em;
     overflow: hidden;
 }
+
 .RadWizard .rwzProgress {
     display: block;
     height: 8px;
     text-indent: -9999px;
     transition: width .6s ease;
 }
+
 .RadWizard .rwzSlider {
     overflow: auto;
 }
+
 .RadWizard .rwzContent {
     white-space: normal;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+
 .RadWizard .rwzStep {
     display: none;
 }
+
 .RadWizard .rwzStep.rwzActive {
     display: block;
 }
+
 .RadWizard .rwzFooter.rwzHidden {
     display: none;
 }
+
 .RadWizard .rwzFooter.rwzShadow {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
+
 .RadWizard .rwzNav {
     width: 100%;
 }
+
 .RadWizard .rwzNav:after {
     content: "";
     display: block;
     clear: both;
 }
+
 .RadWizard .rwzNav .rwzLI {
     float: left;
     margin-right: .769230769231em;
 }
+
 .RadWizard .rwzNav .rwzRight {
     float: right;
     margin-right: 0;
     margin-left: .384615384615em;
 }
+
 .RadWizard .rwzButton {
     display: block;
     min-width: 5.76923076923em;
     padding: 0 1.15384615385em;
-    /*   font-size: inherit;
+ /*   font-size: inherit;
     font-family: inherit;*/
     border: 1px solid #828282;
     cursor: default;
@@ -768,9 +748,11 @@ button.rwzButton:hover {
     text-align: center;
     outline: 0;
 }
+
 .RadWizard .rwzButton .rwzText {
     line-height: 32px;
 }
+
 .RadWizard .rwzCancelWrapper {
     margin: 10px 0 -10px;
     text-align: center;
@@ -778,82 +760,93 @@ button.rwzButton:hover {
     border-top-style: solid;
     line-height: 30px;
 }
+
 .RadWizard .rwzCancelBtn {
     display: inline-block;
     padding: 5px 10px 7px;
     text-decoration: underline;
     cursor: pointer;
 }
+
 .RadWizard .rwzCancelBtn:hover {
     text-decoration: none;
 }
+
 .RadWizard_rtl .rwzBreadCrumb .rwzLink {
     padding-left: .846153846154em;
     padding-right: 1.53846153846em;
 }
+
 .RadWizard_rtl .rwzBreadCrumb .rwzLink:before {
     border-width: 0 0 1px 1px;
     border-radius: 0 100px 0 0;
     right: auto;
     left: -12.5714285714px;
 }
+
 .RadWizard_rtl .rwzBreadCrumb .rwzPager {
     right: auto;
     left: 0;
 }
+
 .RadWizard_rtl .rwzBreadCrumb .rwzPager .rwzCallout {
     left: 0;
     right: -.846153846154em;
 }
-.RadWizard_rtl .rwzBreadCrumb .rwzPager .rwzCallout:before,
-.RadWizard_rtl .rwzBreadCrumb .rwzPager .rwzCallout:after {
+
+.RadWizard_rtl .rwzBreadCrumb .rwzPager .rwzCallout:before,.RadWizard_rtl .rwzBreadCrumb .rwzPager .rwzCallout:after {
     left: auto;
     right: 0;
 }
+
 .RadWizard_rtl .rwzNav .rwzLI {
     float: right;
     margin-right: 0;
     margin-left: .384615384615em;
 }
+
 .RadWizard_rtl .rwzNav .rwzRight {
     float: left;
     margin-right: .384615384615em;
     margin-left: 0;
 }
+
 @media only screen and (max-width:768px) {
     .RadWizard .rwzFooter .rwzLI {
         /*width: 49%;*/
-        
         width: 42%;
         margin-right: 2%;
     }
+
     .RadWizard .rwzFooter .rwzRight {
         margin: 0;
     }
+
     .RadWizard .rwzButton {
         width: 100%;
         box-sizing: border-box;
     }
+
     .RadWizard_rtl .rwzFooter .rwzLI {
         float: right;
         margin-right: 0;
         margin-left: 2%;
     }
+
     .RadWizard_rtl .rwzFooter .rwzRight {
         float: left;
         margin: 0;
     }
-}
-span.rwzPager {
+}span.rwzPager {
     background: #dc4f00;
-}
+    }
 .RadWizard .rwzBreadCrumb .rwzPager {
     background: #dc4f00;
+    }
 }
 
-}
 span.rwzPager {
-    display: block;
+        display: block;
     /*padding: 0 .846153846154em;*/
     padding: 0 1.2em;
     color: inherit;
@@ -861,6 +854,7 @@ span.rwzPager {
     white-space: nowrap;
     cursor: default;
 }
+
 .RadWizard .rwzBreadCrumb .rwzPager .rwzCallout {
     /* width: 1em; */
     /* height: 3.23076923077em; */
@@ -869,8 +863,8 @@ span.rwzPager {
     /* left: -0.923076923077em; */
     /* overflow: hidden; */
 }
-.RadWizard .rwzLink,
-.RadWizard .rwzPager {
+
+.RadWizard .rwzLink, .RadWizard .rwzPager {
     display: block;
     padding: 0 1.2em;
     color: inherit;
@@ -878,33 +872,34 @@ span.rwzPager {
     white-space: nowrap;
     cursor: default;
 }
+
 .RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before {
     background: #dc4f00;
 }
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before,
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
+.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before, .RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
     border-color: #dc4f00;
 }
 
 /* .RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before {
     top: -1.15384615385em;
 } */
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before,
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
+
+.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before, .RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
     content: "";
     position: absolute;
     width: 1.92307692308em;
     height: 1.92307692308em;
     left: 0;
-    -moz-transform: rotate(45deg) skew(15deg, 15deg);
-    -webkit-transform: rotate(45deg) skew(15deg, 15deg);
-    -ms-transform: rotate(45deg) skew(15deg, 15deg);
-    -o-transform: rotate(45deg) skew(15deg, 15deg);
-    transform: rotate(45deg) skew(15deg, 15deg);
+    -moz-transform: rotate(45deg) skew(15deg,15deg);
+    -webkit-transform: rotate(45deg) skew(15deg,15deg);
+    -ms-transform: rotate(45deg) skew(15deg,15deg);
+    -o-transform: rotate(45deg) skew(15deg,15deg);
+    transform: rotate(45deg) skew(15deg,15deg);
     border-width: 1px;
     border-style: solid;
     background: #dc4f00 !important;
 }
+
 .RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
     background: #dc4f00;
 }
@@ -912,6 +907,7 @@ span.rwzPager {
 /* .RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
     top: 2.23076923077em;
 } */
+
 .RadWizard .rwzBreadCrumb {
     position: relative;
     /* width: 100%; */
@@ -920,54 +916,4 @@ span.rwzPager {
     /* overflow: hidden; */
     /* border-width: 1px; */
     /* border-style: solid; */
-}
-
-/* Strength bar */
-span[id*=RadTextBox_passwordStrengthIndicator] {
-    opacity: 0;
-    -webkit-transition: opacity ease-out 300ms;
-    -moz-transition: opacity ease-out 300ms;
-    -o-transition: opacity ease-out 300ms;
-    transition: opacity ease-out 300ms;
-}
-span[id*=RadTextBox_passwordStrengthIndicator].riStrengthBar.riStrengthBarL1,
-span[id*=RadTextBox_passwordStrengthIndicator].riStrengthBar.riStrengthBarL2,
-span[id*=RadTextBox_passwordStrengthIndicator].riStrengthBar.riStrengthBarL3,
-span[id*=RadTextBox_passwordStrengthIndicator].riStrengthBar.riStrengthBarL4,
-span[id*=RadTextBox_passwordStrengthIndicator].riStrengthBar.riStrengthBarL5 {
-    opacity: 1;
-}
-.riStrengthBar {
-    color: #9e5900;
-    font-size: 1.3rem;
-    padding: 5px 10px !important;
-    height: 35px;
-    line-height: 2;
-}
-
-/* responsive paging */
-#wfznavParent button {
-    background: #dc4f00;
-    margin-right: 10px
-}
-#wfz_gotonav {
-    background: #f4f5ed;
-}
-#wfz_gotonav > ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-#wfz_gotonav ul.nav.navbar-nav li {
-    border-bottom: 1px solid #e5e5e5;
-}
-#wfz_gotonav ul.nav.navbar-nav li a {
-    display: block;
-    padding: 5px 25px 5px 30px;
-    font-size: 1.3rem;
-}
-#wfz_gotonav ul.nav.navbar-nav li a:hover,
-#wfz_gotonav ul.nav.navbar-nav li a:focus,
-#wfz_gotonav ul.nav.navbar-nav li a:active {
-    background: #dc4f00;
 }
