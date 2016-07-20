@@ -1,3 +1,21 @@
+/* reset */
+
+div, span, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea, input[type=button] {
+    font-family: inherit !important;
+	font-size: inherit !important;
+}
+
 /* wrapper - over ride display: table setting on wrapper which breaks responsive tables / amend footer style; */
 
 .wrapper,
@@ -17,9 +35,11 @@ label[id*=AppMultiInstanceAnswer].control-label {
     line-height: 1.6em;
 }
 
+/* required fields */
+
 #MainHtml label[id*=Caption].control-label.Required,
 label[id*=AppMultiInstanceAnswer].control-label.Required {
-    padding-left: 15px !important;
+    padding-left: 20px !important;
     background: none !important;
 }
 
@@ -28,24 +48,17 @@ label[id*=AppMultiInstanceAnswer].control-label.Required {
     color: red;
     position: absolute;
     top: 4px;
-    left: 15px;
+    left: 15px !important;
 }
 
+/* fix position of required field indicator on small screen sizes */
 
-/* Info and info required */
-
-.WFZRow .Info {
-    font-size: 1.3rem;
-    padding-left: 15px;
-    background: none !important;
+#MainHtml label[id*=CaptionMobile].control-label.Required {
+    padding-left: 30px !important;
 }
 
-.WFZRow .Info:before {
-    content: " * ";
-    color: red;
-    position: absolute;
-    top: 4px;
-    left: 15px;
+#MainHtml label[id*=CaptionMobile].control-label.Required:before {
+    left: 45px !important;
 }
 
 
@@ -59,7 +72,6 @@ span[id*="BusinessLabel"].Important {
     min-height: 33px;
     padding: 5px 10px;
     font-weight: 400;
-    font-size: 1.3rem;
     border: 1px solid #f2f2f2;
 }
 
@@ -76,9 +88,9 @@ div[id*="SummaryRadPanelBar"] > ul {
 /* tool tips */
 
 input[id*="Tooltip"] {
-    margin: 4px 0 0 0;
+    margin-top: 4px;
     display: block;
-    padding: 0;
+    padding-left: 0;
 }
 
 
@@ -86,7 +98,6 @@ input[id*="Tooltip"] {
 
 .ValidationError {
     display: block;
-    font-size: 1.3rem;
     padding: 5px 0 !important;
 }
 
@@ -135,11 +146,11 @@ a.rpLink {
     margin-bottom: 10px;
 }
 
-span.rpText {
-    line-height: 1.45em;
-    font-size: 170%;
-    padding: 0 !important;
-    font-family: Raleway, Verdana, sans-serif;
+.rpText {
+    font-size: 150% !important;
+    padding: 15px 0 !important;
+    color: #666;
+    font-weight: 100;
 }
 
 span.rpOut {
@@ -169,6 +180,11 @@ div[id*="Wfz"] input[type="tel"] {
     box-shadow: none;
 }
 
+/* text area */
+
+.RadInput.riSingle textarea {
+    min-height: 80px;
+}
 
 /* file upload */
 
@@ -182,8 +198,6 @@ div[id*="Wfz"] input[type="tel"] {
     transition: .2s ease-out;
     border-radius: 2px;
     height: 35px !important;
-    line-height: 20px !important;
-    font-size: 1.3rem !important;
     text-transform: uppercase;
     min-width: 8em;
 }
@@ -200,52 +214,49 @@ div[id*="Wfz"] input[type="tel"] {
 /* successful upload */
 
 .RadUpload .ruUploadSuccess {
-    font-size: 1.3rem;
+
     padding-right: 4px;
 }
 
 
 /* text area */
 
-span[id*="RadTextBox_wrapper"],
-span[id*="RadTextArea_wrapper"] {
+[id*="RadTextBox_wrapper"],
+[id*="RadTextArea_wrapper"] {
     width: 100% !important;
 }
 
 
 /* numeric text box */
 
-span[id*="RadNumericTextBox"] {
+[id*="RadNumericTextBox"] {
     width: 70% !important;
 }
 
 
 /* radio button list / check box set */
 
-table[id*="RadioButtonList"] td,
-span[class*="CheckBox"] td {
+[id*="RadioButtonList"] td,
+[class*="CheckBox"] td {
     padding: 2px;
 }
 
-table[id*="RadioButtonList"] label,
-span[class*="CheckBox"] label {
+[id*="RadioButtonList"] label,
+[class*="CheckBox"] label {
     margin-left: 10px;
-    line-height: 18px !important;
+    font-weight: normal;
 }
 
 
-/* combo box and find button */
+/* combo box (rcb) and find button */
 
-.RadComboBox .rcbInner {
+.rcbInner {
     padding: 5px 10px !important;
-    height: 35px !important;
-    border: 1px solid #ccc;
+    height: 35px;
 }
 
-.RadComboBox .rcbActionButton {
-    padding: 8px !important;
-    min-width: 1em;
-    width: auto !important;
+.rcbInner .rcbInput {
+    height: auto !important;
 }
 
 input[id*=FindButtonControl] {
@@ -256,14 +267,19 @@ input[id*=FindButtonControl] {
     border-radius: 2px;
     height: 35px !important;
     line-height: 20px !important;
-    font-size: 1.3rem !important;
     text-transform: uppercase;
     min-width: 8em;
 }
 
-button[type=button].rcbActionButton {
-    background-color: white;
+.RadComboBox button.rcbActionButton {
+    background-color: transparent;
     border-color: transparent;
+    width: 2em;
+}
+
+.RadComboBox .rcbFocused button.rcbActionButton {
+    border-color: #dc4f00;
+    background-color: #dc4f00;
 }
 
 
@@ -330,27 +346,21 @@ button[type=button].rcbActionButton {
     }
 }
 
-
-/* form controls */
-
-.RadInput.riSingle textarea {
-    min-height: 80px;
-}
-
-
-/* file input */
-
-.RadDropDownList_Green .rddlFakeInput {
-    font-size: 1.3rem !important;
-    height: 33px !important;
-    padding: 5px 10px !important;
-    line-height: 1.8em !important;
-    box-sizing: border-box;
-}
+/* drop down list */
 
 .RadDropDownList {
-    font-size: 1.3rem !important;
+    font: inherit !important;
     width: 70% !important;
+}
+
+.RadDropDownList .rddlInner {
+    padding: 5px 10px !important;
+    height: 2em;
+    border: 1px solid #ccc !important;
+}
+
+.RadDropDownList .rddlInner .rddlIcon:before {
+    top: 0.2em !important;
 }
 
 .rddlSlide {
@@ -359,12 +369,6 @@ button[type=button].rcbActionButton {
 
 .rddlPopup {
     border: 0 !important;
-    font-size: 1.3rem !important;
-}
-
-.RadDropDownList .rddlIcon:before {
-    top: 0;
-    font-size: 1.3rem !important;
 }
 
 li.rddlItem.rddlItemSelected {
@@ -375,16 +379,6 @@ span.rddlInner.rddlFocused {
     border-color: #dc4f00;
     background-color: #dc4f00;
 }
-
-
-/* mi */
-
-table[id*=WfzLister] .rgCommandRow,
-table[id*=WfzLister] .rgHeader a,
-table[id*=WfzLister] .rgNoRecords {
-    font-size: 1.3rem !important;
-}
-
 
 /* finder */
 
@@ -423,22 +417,13 @@ input[id*=FindButtonControl] {
 
 /* calendar */
 
-.RadCalendar_MetroTouch {
-    font-size: 1.3rem;
-    margin-top: -1px;
+.RadCalendar .rcMain .rcRow .rcSelected a {
+    border-color: #dc4f00;
+    background: #dc4f00;
 }
 
 
 /* list box */
-
-.RadComboBox .rcbEmptyMessage {
-    font-style: normal !important;
-}
-
-.RadComboBox_MetroTouch .rcbFocused .rcbActionButton {
-    border-color: #dc4f00;
-    background-color: #dc4f00;
-}
 
 .RadForm_Silk.RadForm.rfdLabel label,
 .RadForm_Silk.RadForm.rfdLabel .rfdAspLabel {
@@ -470,9 +455,7 @@ input[id*=FormButtonSubmit] {
     border-radius: 2px;
     display: inline-block;
     height: 36px;
-    line-height: 36px !important;
-    padding: 0 2rem;
-    font-size: 1.3rem !important;
+    line-height: 34px !important;
     text-transform: uppercase;
     min-width: 7em;
 }
@@ -496,7 +479,7 @@ input[id*=FormButtonSubmit] {
 
 button.rwzButton.rwzPrevious {
     background-color: transparent;
-    color: black;
+    color: #000;
 }
 
 button.rwzButton.rwzPrevious:hover {
@@ -570,10 +553,6 @@ button.rwzButton:hover {
 }
 
 .RadWizard .rwzText {
-    /* display:inline-block; */
-    /* max-width:100%; */
-    /* vertical-align:middle; */
-    /* overflow:hidden; */
     -ms-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     /* text-overflow:ellipsis */
@@ -866,15 +845,6 @@ span.rwzPager {
     cursor: default;
 }
 
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout {
-    /* width: 1em; */
-    /* height: 3.23076923077em; */
-    /* position: absolute; */
-    /* top: 0; */
-    /* left: -0.923076923077em; */
-    /* overflow: hidden; */
-}
-
 .RadWizard .rwzLink,
 .RadWizard .rwzPager {
     display: block;
@@ -920,20 +890,9 @@ span.rwzPager {
     background: #dc4f00;
 }
 
-
-/* .RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
-    top: 2.23076923077em;
-} */
-
 .RadWizard .rwzBreadCrumb {
     position: relative;
-    /* width: 100%; */
-    /* height: 3.38461538462em; */
-    /* line-height: 3.23076923077em; */
-    /* overflow: hidden; */
-    /* border-width: 1px; */
-    /* border-style: solid; */
-}
+ }
 
 
 /* Strength bar */
@@ -956,7 +915,6 @@ span[id*=RadTextBox_passwordStrengthIndicator].riStrengthBar.riStrengthBarL5 {
 
 .riStrengthBar {
     color: #9e5900;
-    font-size: 1.3rem;
     padding: 5px 10px !important;
     height: 35px;
     line-height: 2;
@@ -987,7 +945,7 @@ span[id*=RadTextBox_passwordStrengthIndicator].riStrengthBar.riStrengthBarL5 {
 #wfz_gotonav ul.nav.navbar-nav li a {
     display: block;
     padding: 5px 25px 5px 30px;
-    font-size: 1.3rem;
+
 }
 
 #wfz_gotonav ul.nav.navbar-nav li a:hover,

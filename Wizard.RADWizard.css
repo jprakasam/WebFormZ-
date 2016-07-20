@@ -1,5 +1,4 @@
 .RadWizard_WFZ-Wizard {
-    /* font-family: "Segoe UI",Arial,Helvetica,sans-serif; */
     color: #333;
     background: #fff;
 }
@@ -146,7 +145,7 @@
 
 .RadWizard_WFZ-Wizard .rwzBreadCrumb .rwzText {
     display: inline-block;
-    line-height: 2.16666667em;
+    line-height: 2.16666667em !important;
     max-width: 100%;
     vertical-align: middle;
     overflow: hidden;
@@ -223,10 +222,12 @@
 }
 
 .RadWizard_WFZ-Wizard .rwzContent+.rwzNav {
+    /*
     margin-top: 15px;
     margin-bottom: 0;
     padding-left: 15px;
     padding-right: 15px;
+*/
 }
 
 
