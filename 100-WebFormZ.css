@@ -45,21 +45,11 @@ thead,
 tr,
 th,
 td,
-article,
-aside,
 canvas,
-details,
 embed,
 figure,
 figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
 section,
-summary,
 input,
 textarea,
 input[type=button] {
@@ -293,9 +283,11 @@ div[id*="Wfz"] input[type="tel"] {
 }
 
 
-/* combo box (rcb) */
+/* combo box (rcb) and drop down list (rddl) */
 
-.RadComboBox span.rcbInner {
+.RadComboBox span.rcbInner,
+.RadDropDownList span.rddlInner {
+    background: transparent;
     padding: 5px 10px !important;
     height: 35px;
     border: 1px solid #ccc !important;
@@ -332,13 +324,6 @@ div[id*="Wfz"] input[type="tel"] {
     width: 70% !important;
 }
 
-.RadDropDownList span.rddlInner {
-    background: transparent;
-    padding: 5px 10px !important;
-    height: 35px;
-    border: 1px solid #ccc !important;
-}
-
 .RadDropDownList span.rddlInner.rddlFocused {
     border-color: #dc4f00;
     background-color: #dc4f00;
@@ -363,15 +348,7 @@ div[id*="Wfz"] input[type="tel"] {
     background: #dc4f00;
 }
 
-
-/* multi instance table */
-
-.rgCommandCell {
-    padding: 7px 12px !important;
-}
-
-
-/* Zebra striping */
+/* zebra striping */
 
 .table-responsive tr:nth-of-type(odd) {
     background: #fafafa;
@@ -468,6 +445,27 @@ input[id*=Find] {
 
 /* list box */
 
+.RadComboBoxDropDown {
+    display: inline-block !important;
+    min-width: 11.66666667em !important;
+    border-color: #eee;
+   }
+
+li.rcbItem {
+    padding: 5px 10px !important;
+}
+
+li.rcbItem label {
+    margin-left: -4px !important;
+}
+
+.RadForm_Silk.RadForm.rfdLabel label, .RadForm_Silk.RadForm.rfdLabel .rfdAspLabel {
+    line-height: normal !important;
+}
+
+.RadComboBoxDropDown .rcbHovered {
+    background: #dc4f00;
+}
 
 /* buttons */
 
