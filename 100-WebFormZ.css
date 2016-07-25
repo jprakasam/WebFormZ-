@@ -283,6 +283,22 @@ div[id*="Wfz"] input[type="tel"] {
 }
 
 
+/* states */
+
+#MainHtml input[type="radio"],
+#MainHtml .rcbList input[type=checkbox]:not(:checked),
+#MainHtml .CheckBoxList input[type=checkbox]:not(:checked) {
+    background-position-y: 5px;
+}
+
+#MainHtml [id*="RadioButtonList"] input[type="radio"]:checked,
+#MainHtml [type="checkbox"]:hover,
+#MainHtml [type="checkbox"]:hover:checked,
+#MainHtml .input[type="checkbox"]:checked {
+    background-position-y: -35px;
+}
+
+
 /* combo box (rcb) and drop down list (rddl) */
 
 .RadComboBox span.rcbInner,
@@ -347,6 +363,7 @@ div[id*="Wfz"] input[type="tel"] {
 .rddlSlide .rddlPopup .rddlItem.rddlItemSelected {
     background: #dc4f00;
 }
+
 
 /* zebra striping */
 
@@ -437,35 +454,61 @@ input[id*=Find] {
 
 /* calendar */
 
-.RadCalendar .rcMain .rcRow .rcSelected a {
+.RadCalendarPopup .RadCalendar .rcMain .rcRow .rcSelected a {
     border-color: #dc4f00;
     background: #dc4f00;
 }
 
 
+/* calendar icons and hover state */
+
+.RadCalendar .rcFastPrev:hover,
+.RadCalendar .rcPrev:hover,
+.RadCalendar .rcNext:hover,
+.RadCalendar .rcFastNext:hover,
+.RadCalendar .rcFastPrev:hover:before,
+.RadCalendar .rcPrev:hover:before,
+.RadCalendar .rcNext:hover:before,
+.RadCalendar .rcFastNext:hover:before {
+    color: #dc4f00;
+}
+
+.RadPicker .rcCalPopup:hover:before,
+.RadPicker .rcCalPopup:focus:before,
+.RadPicker .rcCalPopup:active:before,
+.RadPicker .rcTimePopup:hover:before,
+.RadPicker .rcTimePopup:focus:before,
+.RadPicker .rcTimePopup:active:before {
+    color: #dc4f00;
+}
+
+
 /* list box */
 
-.RadComboBoxDropDown {
+[id*=RadListBox_DropDown].RadComboBoxDropDown {
     display: inline-block !important;
     min-width: 11.66666667em !important;
     border-color: #eee;
-   }
-
-li.rcbItem {
-    padding: 5px 10px !important;
 }
 
-li.rcbItem label {
-    margin-left: -4px !important;
+[id*=RadListBox_DropDown].RadComboBoxDropDown li {
+    padding: 5px 10px;
 }
 
-.RadForm_Silk.RadForm.rfdLabel label, .RadForm_Silk.RadForm.rfdLabel .rfdAspLabel {
+[id*=RadListBox_DropDown].RadComboBoxDropDown li label {
+    margin-left: -4px;
     line-height: normal !important;
 }
 
-.RadComboBoxDropDown .rcbHovered {
+[id*=RadListBox_DropDown].RadComboBoxDropDown .rcbHovered {
     background: #dc4f00;
+    margin: 0;
 }
+
+[id*=RadListBox_DropDown].RadComboBoxDropDown .rcbHovered label {
+    color: #fff !important;
+}
+
 
 /* buttons */
 
@@ -549,8 +592,9 @@ button.rwzButton:hover {
 }
 
 .RadComboBox button.rcbActionButton {
-    background-color: transparent;
     border-color: transparent;
+    color: #000;
+    background-color: transparent;
 }
 
 
