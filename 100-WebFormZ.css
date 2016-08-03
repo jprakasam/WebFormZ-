@@ -57,6 +57,10 @@ input[type=button] {
     font-size: inherit !important;
 }
 
+label {
+    line-height: normal !important;
+}
+
 
 /* wrapper - over ride display: table setting on wrapper which breaks responsive tables / amend footer style; */
 
@@ -211,7 +215,6 @@ div[id*="Wfz"] .riTextBox,
 div[id*="Wfz"] input[type="datetime"],
 div[id*="Wfz"] input[type="date"],
 div[id*="Wfz"] textarea,
-div[id*="Wfz"] fieldset,
 div[id*="Wfz"] input[type="email"],
 div[id*="Wfz"] input[type="password"],
 div[id*="Wfz"] input[type="url"],
@@ -220,6 +223,7 @@ div[id*="Wfz"] input[type="tel"] {
     padding: 5px 10px !important;
     border: 1px solid #ccc !important;
     height: 35px;
+    font-weight: 400;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -268,8 +272,11 @@ div[id*="Wfz"] input[type="tel"] {
     width: 70% !important;
 }
 
-
 /* radio button list / check box set */
+
+.CheckBoxList {
+    line-height: 1.6em !important;
+}
 
 [id*="RadioButtonList"] td,
 [class*="CheckBox"] td {
@@ -279,32 +286,37 @@ div[id*="Wfz"] input[type="tel"] {
 [id*="RadioButtonList"] label,
 [class*="CheckBox"] label {
     margin-left: 10px;
-    font-weight: normal;
+    font-weight: 400;
 }
-
 
 /* states */
 
+
+/*
 #MainHtml input[type="radio"],
 #MainHtml .rcbList input[type=checkbox]:not(:checked),
 #MainHtml .CheckBoxList input[type=checkbox]:not(:checked) {
-    background-position-y: 5px;
+    background-position-y: 6px;
 }
 
 #MainHtml [id*="RadioButtonList"] input[type="radio"]:checked,
 #MainHtml [type="checkbox"]:hover,
 #MainHtml [type="checkbox"]:hover:checked,
 #MainHtml .input[type="checkbox"]:checked {
-    background-position-y: -35px;
-}
+    background-position-y: -34px;
+}*/
 
 
 /* combo box (rcb) and drop down list (rddl) */
 
+.RadComboBox {
+    width: auto !important;
+}
+
 .RadComboBox span.rcbInner,
 .RadDropDownList span.rddlInner {
     background: transparent;
-    padding: 5px 10px !important;
+    padding: 0 !important;
     height: 35px;
     border: 1px solid #ccc !important;
 }
@@ -314,6 +326,11 @@ div[id*="Wfz"] input[type="tel"] {
     outline: 0;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.RadComboBox span.rcbInner input.rcbInput {
+    height: 100%;
+    padding: 0 10px;
 }
 
 .RadComboBox span.rcbInner.rcbFocused input:focus {
@@ -338,6 +355,12 @@ div[id*="Wfz"] input[type="tel"] {
 .RadDropDownList {
     font: inherit !important;
     width: 70% !important;
+}
+
+.RadDropDownList .rddlFakeInput {
+    height: 100%;
+    padding: 0px 10px;
+    line-height: 35px;
 }
 
 .RadDropDownList span.rddlInner.rddlFocused {
@@ -455,8 +478,8 @@ input[id*=Find] {
 /* calendar */
 
 .RadCalendarPopup .RadCalendar .rcMain .rcRow .rcSelected a {
-    border-color: #dc4f00;
-    background: #dc4f00;
+    /* border-color: #dc4f00;
+    background: #dc4f00; */
 }
 
 
@@ -470,7 +493,7 @@ input[id*=Find] {
 .RadCalendar .rcPrev:hover:before,
 .RadCalendar .rcNext:hover:before,
 .RadCalendar .rcFastNext:hover:before {
-    color: #dc4f00;
+    color: #dc4f00 !important;
 }
 
 .RadPicker .rcCalPopup:hover:before,
@@ -479,11 +502,11 @@ input[id*=Find] {
 .RadPicker .rcTimePopup:hover:before,
 .RadPicker .rcTimePopup:focus:before,
 .RadPicker .rcTimePopup:active:before {
-    color: #dc4f00;
+    color: #444 !important;
 }
 
 
-/* list box */
+/* list box (rcb list) */
 
 [id*=RadListBox_DropDown].RadComboBoxDropDown {
     display: inline-block !important;
@@ -501,12 +524,16 @@ input[id*=Find] {
 }
 
 [id*=RadListBox_DropDown].RadComboBoxDropDown .rcbHovered {
-    background: #dc4f00;
+    /* background: #dc4f00; */
     margin: 0;
 }
 
 [id*=RadListBox_DropDown].RadComboBoxDropDown .rcbHovered label {
     color: #fff !important;
+}
+
+[id*=RadListBox_DropDown].RadComboBoxDropDown input.rcbCheckBox {
+    margin-top: 1px !important;
 }
 
 
