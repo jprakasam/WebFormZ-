@@ -1,35 +1,34 @@
+/* testing */
+
+body {
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #777;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+
 /* reset font */
 
 div,
 span,
-iframe,
 p,
-blockquote,
-pre,
 a,
-abbr,
-acronym,
-address,
-cite,
-code,
-del,
 em,
-img,
-ins,
 small,
-strike,
 strong,
-sub,
-sup,
-tt,
-var,
 b,
 u,
 i,
-center,
-dl,
-dt,
-dd,
 ol,
 ul,
 li,
@@ -39,17 +38,9 @@ label,
 legend,
 table,
 caption,
-tbody,
-tfoot,
-thead,
 tr,
 th,
 td,
-canvas,
-embed,
-figure,
-figcaption,
-section,
 input,
 textarea,
 input[type=button] {
@@ -57,8 +48,24 @@ input[type=button] {
     font-size: inherit !important;
 }
 
+/*
 label {
     line-height: normal !important;
+}
+*/
+
+
+/*
+.control-label {
+    line-height: normal !important;
+    font-size: 14px !important;
+    color: #989898 !important;
+}
+*/
+
+.control-label {
+    margin-top: 4px;
+    display: inline-block;
 }
 
 
@@ -73,9 +80,9 @@ label {
 
 /* labels */
 
-#MainHtml label[id*=SummaryRadPanelBar].control-label,
-#MainHtml label[id*=Caption].control-label,
-label[id*=AppMultiInstanceAnswer].control-label {
+#MainHtml [id*=SummaryRadPanelBar].control-label,
+#MainHtml [id*=Caption].control-label,
+[id*=AppMultiInstanceAnswer].control-label {
     font-weight: 500;
     padding-left: 7px !important;
 }
@@ -83,36 +90,37 @@ label[id*=AppMultiInstanceAnswer].control-label {
 
 /* required fields */
 
-#MainHtml label[id*=Caption].control-label.Required,
-label[id*=AppMultiInstanceAnswer].control-label.Required {
-    padding-left: 20px !important;
+#MainHtml [id*=Caption].control-label.Required,
+[id*=AppMultiInstanceAnswer].control-label.Required {
+    /*    padding-left: 20px !important;*/
     background: none !important;
 }
 
-.control-label.Required:before {
+.control-label.Required:after {
     content: " * ";
     color: red;
     position: absolute;
-    top: 4px;
-    left: 15px !important;
+    top: 12px;
+    padding-left: 10px;
 }
 
 
 /* fix position of required field indicator on small screen sizes */
 
-#MainHtml label[id*=CaptionMobile].control-label.Required {
+#MainHtml [id*=CaptionMobile].control-label.Required {
     padding-left: 30px !important;
     line-height: 14px;
 }
 
-#MainHtml label[id*=CaptionMobile].control-label.Required:before {
+#MainHtml [id*=CaptionMobile].control-label.Required:before {
     left: 45px !important;
 }
 
 
 /* read only fields */
 
-span[id*="BusinessLabel"].Important {
+
+/* span[id*="BusinessLabel"].Important {
     color: rgba(0, 0, 0, 0.5);
     background-color: rgba(250, 250, 250, 0.9);
     opacity: .8;
@@ -121,12 +129,12 @@ span[id*="BusinessLabel"].Important {
     padding: 5px 10px;
     font-weight: 400;
     border: 1px solid #f2f2f2;
-}
+} */
 
 
 /* contact info */
 
-div[id*="SummaryRadPanelBar"] > ul {
+[id*="SummaryRadPanelBar"] > ul {
     background: #f4f5ed;
     margin: 0 -15px !important;
     padding: 0 15px !important;
@@ -157,17 +165,25 @@ div[id*="Wfz"].t-row,
     margin: 0 -15px 15px -15px;
 }
 
+@media (max-width: 767px) {
+    div[id*="Wfz"].t-row,
+    .t-row {
+        margin: 0 -15px 25px -15px;
+    }
+}
+
 
 /* panel bar */
 
-.RadPanelBar .rpRootGroup {
-    border-color: transparent !important;
+.RadPanelBar ul.rpRootGroup {
+    border-color: transparent;
 }
 
-div[id*="Wfz"] .RadPanelBar .rpSlide,
+
+/* div[id*="Wfz"] .RadPanelBar .rpSlide,
 div[id*="Wfz"] .RadPanelBar_Default .rpGroup {
     height: auto !important;
-}
+} */
 
 
 /* hide expand mode */
@@ -187,7 +203,7 @@ div[id*="Wfz"] .RadPanelBar .rpGroup a.rpLink > .rpOut {
 
 /* panel bar headings */
 
-a.rpLink {
+.rpLink {
     padding: 6px 8px 6px 0;
     border-bottom: 1px dotted #ddd !important;
     background: none !important;
@@ -201,31 +217,19 @@ a.rpLink {
     font-weight: 100;
 }
 
-span.rpOut {
+.rpOut {
     border: 0 !important;
-    padding-bottom: 0 !important;
 }
 
 
 /* inputs */
 
-div[id*="Wfz"] select,
-div[id*="Wfz"] textarea,
-div[id*="Wfz"] .riTextBox,
-div[id*="Wfz"] input[type="datetime"],
-div[id*="Wfz"] input[type="date"],
-div[id*="Wfz"] textarea,
-div[id*="Wfz"] input[type="email"],
-div[id*="Wfz"] input[type="password"],
-div[id*="Wfz"] input[type="url"],
-div[id*="Wfz"] input[type="search"],
-div[id*="Wfz"] input[type="tel"] {
+div[id*="Wfz"] .riTextBox {
     padding: 5px 10px !important;
     border: 1px solid #ccc !important;
     height: 35px;
     font-weight: 400;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    color: #000 !important;
 }
 
 
@@ -258,10 +262,9 @@ div[id*="Wfz"] input[type="tel"] {
 }
 
 
-/* text area */
+/* text and text area wrappers */
 
-[id*="RadTextBox_wrapper"],
-[id*="RadTextArea_wrapper"] {
+[id*="RadText"] {
     width: 100% !important;
 }
 
@@ -272,11 +275,8 @@ div[id*="Wfz"] input[type="tel"] {
     width: 70% !important;
 }
 
-/* radio button list / check box set */
 
-.CheckBoxList {
-    line-height: 1.6em !important;
-}
+/* radio button list / check box set */
 
 [id*="RadioButtonList"] td,
 [class*="CheckBox"] td {
@@ -287,24 +287,19 @@ div[id*="Wfz"] input[type="tel"] {
 [class*="CheckBox"] label {
     margin-left: 10px;
     font-weight: 400;
+    color: #000 !important;
 }
 
-/* states */
-
-
-/*
-#MainHtml input[type="radio"],
-#MainHtml .rcbList input[type=checkbox]:not(:checked),
-#MainHtml .CheckBoxList input[type=checkbox]:not(:checked) {
-    background-position-y: 6px;
+input[type="radio"],
+input.rcbCheckBox[type="checkbox"] {
+    margin: 0.1em 0 0 !important;
+    margin-top: 1px \9;
 }
 
-#MainHtml [id*="RadioButtonList"] input[type="radio"]:checked,
-#MainHtml [type="checkbox"]:hover,
-#MainHtml [type="checkbox"]:hover:checked,
-#MainHtml .input[type="checkbox"]:checked {
-    background-position-y: -34px;
-}*/
+input[type="checkbox"] {
+    margin: 0.2em 0 0 !important;
+    margin-top: 2px \9;
+}
 
 
 /* combo box (rcb) and drop down list (rddl) */
@@ -316,7 +311,6 @@ div[id*="Wfz"] input[type="tel"] {
 .RadComboBox span.rcbInner,
 .RadDropDownList span.rddlInner {
     background: transparent;
-    padding: 0 !important;
     height: 35px;
     border: 1px solid #ccc !important;
 }
@@ -363,7 +357,7 @@ div[id*="Wfz"] input[type="tel"] {
     line-height: 35px;
 }
 
-.RadDropDownList span.rddlInner.rddlFocused {
+.RadDropDownList .rddlInner.rddlFocused {
     border-color: #dc4f00;
     background-color: #dc4f00;
 }
@@ -448,15 +442,9 @@ div[id*=Wfz__Finder] {
     vertical-align: top;
 }
 
-input[id*=Find] {
-    height: 35px;
-    margin-left: 4px !important;
-}
-
-@media (max-width: 467px) {
-    input[id*=Find] {
-        margin: 4px 0 0 !important;
-    }
+.rfdSkinnedButton {
+    /* height: 35px; */
+    margin: 0 4px !important;
 }
 
 
@@ -520,7 +508,6 @@ input[id*=Find] {
 
 [id*=RadListBox_DropDown].RadComboBoxDropDown li label {
     margin-left: -4px;
-    line-height: normal !important;
 }
 
 [id*=RadListBox_DropDown].RadComboBoxDropDown .rcbHovered {
@@ -530,10 +517,6 @@ input[id*=Find] {
 
 [id*=RadListBox_DropDown].RadComboBoxDropDown .rcbHovered label {
     color: #fff !important;
-}
-
-[id*=RadListBox_DropDown].RadComboBoxDropDown input.rcbCheckBox {
-    margin-top: 1px !important;
 }
 
 
@@ -552,7 +535,9 @@ input.Close,
 input[value=Delete],
 input[id*=FormButtonSubmit],
 input[id*=Find],
-.RadUpload .ruButton {
+.RadUpload .ruButton,
+input[id*=ViewUploadButton],
+input[id*=DeleteUploadButton] {
     text-decoration: none;
     text-align: center;
     letter-spacing: .5px;
@@ -564,12 +549,14 @@ input[id*=Find],
     text-transform: uppercase;
     min-width: 7em;
     padding: 5px 10px;
+    vertical-align: middle !important;
 }
 
 input[value=Save],
 input.Close,
 input[value=Delete],
-button.rwzButton.rwzPrevious {
+button.rwzButton.rwzPrevious,
+input[id*=ViewUploadButton] {
     background: none !important;
     color: #000 !important;
 }
@@ -586,10 +573,12 @@ input.TextButton.Save,
 input.SaveAndNew,
 #MainHtml input[id*=FormButtonSubmit],
 #MainHtml input[id*=Find],
-.RadUpload .ruButton {
+.RadUpload .ruButton,
+#MainHtml input[id*=DeleteUploadButton] {
     color: #fff;
     background-color: #dc4f00 !important;
     background-image: none;
+    vertical-align: middle;
 }
 
 button.rwzButton:hover,
@@ -609,6 +598,10 @@ input[id*=FormButtonSubmit] {
 button.rwzButton.rwzPrevious:hover {
     background-color: #dc4f00;
     color: #fff;
+}
+
+.RadUpload .ruInputs .ruFileWrap {
+    overflow: visible;
 }
 
 
@@ -642,11 +635,13 @@ button.rwzButton:hover {
 
 /* footer captions */
 
-#MainHtml [class*=footer] label[id*=SaveButton_Caption],
-#MainHtml [class*=footer] label[id*=DeleteButton_Caption],
-#MainHtml [class*=footer] label[id*=SubmitButton_Caption] {
+/*
+label[id*=SaveButton_Caption],
+label[id*=DeleteButton_Caption],
+label[id*=SubmitButton_Caption] {
     line-height: 35px !important;
 }
+*/
 
 
 /* wizard */
@@ -1056,23 +1051,23 @@ span[id*=RadTextBox_passwordStrengthIndicator].riStrengthBar.riStrengthBarL5 {
     background: #f4f5ed;
 }
 
-#wfz_gotonav > ul {
+#wfz_gotonav ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-#wfz_gotonav ul.nav.navbar-nav li {
+#wfz_gotonav li {
     border-bottom: 1px solid #e5e5e5;
 }
 
-#wfz_gotonav ul.nav.navbar-nav li a {
+#wfz_gotonav a {
     display: block;
     padding: 5px 25px 5px 30px;
 }
 
-#wfz_gotonav ul.nav.navbar-nav li a:hover,
-#wfz_gotonav ul.nav.navbar-nav li a:focus,
-#wfz_gotonav ul.nav.navbar-nav li a:active {
+#wfz_gotonav a:hover,
+#wfz_gotonav a:focus,
+#wfz_gotonav a:active {
     background: #dc4f00;
 }
