@@ -1,5 +1,6 @@
 /* testing */
 
+
 /*
 body {
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
@@ -49,6 +50,7 @@ input[type=button] {
     font-family: inherit !important;
     font-size: inherit !important;
 }
+
 
 /*
 label {
@@ -101,16 +103,21 @@ label {
 .control-label.Required:after {
     content: " * ";
     color: red;
+    top: 7px;
+    padding-left: 4px;
     position: absolute;
-    top: 12px;
-    padding-left: 10px;
 }
 
 
 /* fix position of required field indicator on small screen sizes */
 
+label[id*=CaptionMobile] {
+    line-height: 1 !important;
+    margin: 1px !important;
+}
+
 #MainHtml [id*=CaptionMobile].control-label.Required {
-    padding-left: 30px !important;
+    padding-left: 17px !important;
     line-height: 14px;
 }
 
@@ -132,6 +139,17 @@ label {
     font-weight: 400;
     border: 1px solid #f2f2f2;
 } */
+
+span[disabled] {
+    background: #fafafa;
+    padding: 5px 10px;
+    min-width: 160px;
+    display: inline-block;
+    min-height: 35px;
+    border: 1px solid #ddd;
+    margin: 0;
+    font-weight: 400;
+}
 
 
 /* contact info */
@@ -238,7 +256,7 @@ div[id*="Wfz"] .riTextBox {
 /* text area */
 
 .RadInput.riSingle textarea {
-    min-height: 80px;
+    min-height: 100px;
 }
 
 
@@ -246,6 +264,13 @@ div[id*="Wfz"] .riTextBox {
 
 .RadUpload {
     width: auto !important;
+}
+
+
+/* temporary */
+
+img[src*=NoImageAvailable] {
+    display: none;
 }
 
 
@@ -267,6 +292,11 @@ div[id*="Wfz"] .riTextBox {
 /* text and text area wrappers */
 
 [id*="RadText"] {
+    width: auto !important;
+    min-width: 400px;
+}
+
+[id*="RadTextArea"] {
     width: 100% !important;
 }
 
@@ -292,6 +322,13 @@ div[id*="Wfz"] .riTextBox {
     color: #000 !important;
 }
 
+input[type="radio"]+label,
+input[type="checkbox"]+label {
+    font-size: 0.92em !important;
+}
+
+
+/*
 input[type="radio"],
 input.rcbCheckBox[type="checkbox"] {
     margin: 0.1em 0 0 !important;
@@ -302,6 +339,7 @@ input[type="checkbox"] {
     margin: 0.2em 0 0 !important;
     margin-top: 2px \9;
 }
+*/
 
 
 /* combo box (rcb) and drop down list (rddl) */
@@ -315,6 +353,8 @@ input[type="checkbox"] {
     background: transparent;
     height: 35px;
     border: 1px solid #ccc !important;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .RadComboBox span.rcbInner.rcbFocused {
@@ -444,9 +484,11 @@ div[id*=Wfz__Finder] {
     vertical-align: top;
 }
 
-.rfdSkinnedButton {
-    /* height: 35px; */
-    margin: 0 4px !important;
+@media (min-width: 768px) {
+    .rfdSkinnedButton {
+        /* height: 35px; */
+        margin: 0 4px !important;
+    }
 }
 
 
@@ -636,6 +678,7 @@ button.rwzButton:hover {
 
 
 /* footer captions */
+
 
 /*
 label[id*=SaveButton_Caption],
