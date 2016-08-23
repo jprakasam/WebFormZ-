@@ -1,6 +1,5 @@
 /* testing */
 
-
 /*
 body {
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
@@ -22,54 +21,45 @@ h6 {
 
 /* reset font */
 
-div,
-span,
-p,
-a,
-em,
-small,
-strong,
-b,
-u,
-i,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tr,
-th,
-td,
-input,
-textarea,
-input[type=button] {
-    font-family: inherit !important;
-    font-size: inherit !important;
+[id*=Wfz] div,
+[id*=Wfz] span,
+[id*=Wfz] p,
+[id*=Wfz] em,
+[id*=Wfz] small,
+[id*=Wfz] strong,
+[id*=Wfz] b,
+[id*=Wfz] u,
+[id*=Wfz] i,
+[id*=Wfz] [id*=Wfz] ol,
+[id*=Wfz] ul,
+[id*=Wfz] li,
+[id*=Wfz] fieldset,
+[id*=Wfz] form,
+[id*=Wfz] label,
+[id*=Wfz] legend,
+[id*=Wfz] table,
+[id*=Wfz] caption,
+[id*=Wfz] tr,
+[id*=Wfz] th,
+[id*=Wfz] td,
+[id*=Wfz] input,
+[id*=Wfz] textarea,
+input[type=button],
+.rpTemplate {
+    font: inherit !important;
+    line-height: 1.1 !important;
 }
-
-
-/*
-label {
-    line-height: normal !important;
-}
-*/
-
-
-/*
-.control-label {
-    line-height: normal !important;
-    font-size: 14px !important;
-    color: #989898 !important;
-}
-*/
 
 .control-label {
     margin-top: 4px;
     display: inline-block;
+    font: inherit !important;
+}
+
+@media (max-width: 768px) {
+    .control-label {
+        margin-bottom: 5px !important;
+    }
 }
 
 
@@ -117,8 +107,11 @@ label[id*=CaptionMobile] {
 }
 
 #MainHtml [id*=CaptionMobile].control-label.Required {
-    padding-left: 17px !important;
+    padding-left: 9px !important;
     line-height: 14px;
+    color: black;
+    font-size: 0.92em !important;
+    position: relative;
 }
 
 #MainHtml [id*=CaptionMobile].control-label.Required:before {
@@ -230,7 +223,10 @@ div[id*="Wfz"] .RadPanelBar .rpGroup a.rpLink > .rpOut {
     margin-bottom: 10px;
 }
 
-.rpText {
+
+/* higher specificity required e.g. span + .rpText */
+
+span.rpText {
     font-size: 150% !important;
     padding: 15px 0 !important;
     color: #666;
@@ -293,7 +289,12 @@ img[src*=NoImageAvailable] {
 
 [id*="RadText"] {
     width: auto !important;
-    min-width: 400px;
+}
+
+@media (min-width: 768px) {
+    [id*="RadText"] {
+        min-width: 400px;
+    }
 }
 
 [id*="RadTextArea"] {
@@ -310,6 +311,12 @@ img[src*=NoImageAvailable] {
 
 /* radio button list / check box set */
 
+.CheckBoxList br {
+    display: block;
+    height: 1px;
+    content: " ";
+}
+
 [id*="RadioButtonList"] td,
 [class*="CheckBox"] td {
     padding: 2px;
@@ -325,6 +332,8 @@ img[src*=NoImageAvailable] {
 input[type="radio"]+label,
 input[type="checkbox"]+label {
     font-size: 0.92em !important;
+    display: inline-block;
+    margin-top: 1px !important;
 }
 
 
@@ -394,9 +403,9 @@ input[type="checkbox"] {
 }
 
 .RadDropDownList .rddlFakeInput {
-    height: 100%;
-    padding: 0px 10px;
-    line-height: 35px;
+    vertical-align: middle;
+    display: table-cell !important;
+    height: 35px;
 }
 
 .RadDropDownList .rddlInner.rddlFocused {
@@ -466,6 +475,9 @@ input[type="checkbox"] {
         border-bottom: 1px solid #fff !important;
         text-align: right;
     }
+    td:before {
+        content: attr(data-label);
+    }
     /* hide elements that contain nothing */
     .table-responsive td:empty {
         display: none;
@@ -498,6 +510,7 @@ div[id*=Wfz__Finder] {
 .RadPicker .rcTimePopup {
     background: none !important;
     border: 0 !important;
+    height: 1.7em !important;
 }
 
 .RadPicker .rcCalPopup:hover,
@@ -561,6 +574,12 @@ div[id*=Wfz__Finder] {
 
 [id*=RadListBox_DropDown].RadComboBoxDropDown .rcbHovered label {
     color: #fff !important;
+}
+
+[id*=RadListBox_DropDown].RadComboBoxDropDown li label {
+    font-size: 0.92em !important;
+    display: inline-block;
+    color: #000 !important;
 }
 
 
