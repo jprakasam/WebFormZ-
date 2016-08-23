@@ -1,5 +1,6 @@
 /* testing */
 
+
 /*
 body {
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
@@ -337,20 +338,6 @@ input[type="checkbox"]+label {
 }
 
 
-/*
-input[type="radio"],
-input.rcbCheckBox[type="checkbox"] {
-    margin: 0.1em 0 0 !important;
-    margin-top: 1px \9;
-}
-
-input[type="checkbox"] {
-    margin: 0.2em 0 0 !important;
-    margin-top: 2px \9;
-}
-*/
-
-
 /* combo box (rcb) and drop down list (rddl) */
 
 .RadComboBox {
@@ -590,6 +577,10 @@ button:not(.rcbActionButton) {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
+input[id*=ZoomPictureButton] {
+    display: inline-block !important;
+}
+
 button.rwzButton,
 input[value=Save],
 input.TextButton.Save,
@@ -599,6 +590,7 @@ input[value=Delete],
 input[id*=FormButtonSubmit],
 input[id*=Find],
 .RadUpload .ruButton,
+input[id*=ZoomPictureButton],
 input[id*=ViewUploadButton],
 input[id*=DeleteUploadButton] {
     text-decoration: none;
@@ -619,6 +611,7 @@ input[value=Save],
 input.Close,
 input[value=Delete],
 button.rwzButton.rwzPrevious,
+input[id*=ZoomPictureButton],
 input[id*=ViewUploadButton] {
     background: none !important;
     color: #000 !important;
