@@ -47,8 +47,12 @@ h6 {
 [id*=Wfz] textarea,
 input[type=button],
 .rpTemplate {
+/*
     font: inherit !important;
     line-height: 1.1 !important;
+*/
+        /*  font: inherit !important; */
+    line-height: 1.6 !important;
 }
 
 .control-label {
@@ -78,7 +82,7 @@ input[type=button],
 #MainHtml [id*=SummaryRadPanelBar].control-label,
 #MainHtml [id*=Caption].control-label,
 [id*=AppMultiInstanceAnswer].control-label {
-    font-weight: 500;
+    font-weight: 600;
     padding-left: 7px !important;
 }
 
@@ -94,7 +98,7 @@ input[type=button],
 .control-label.Required:after {
     content: " * ";
     color: red;
-    top: 7px;
+    padding-top: 0.2em;
     padding-left: 4px;
     position: absolute;
 }
