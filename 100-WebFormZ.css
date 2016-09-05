@@ -26,7 +26,7 @@ h6 {
 /* reset font */
 
 [id*=Wfz] div,
-[id*=Wfz] span,
+[id*=Wfz] span:not(.rcbIcon),
 [id*=Wfz] p,
 [id*=Wfz] em,
 [id*=Wfz] small,
@@ -143,7 +143,8 @@ span[disabled] {
 /* contact info */
 
 [id*="SummaryRadPanelBar"] > ul {
-    background: #f4f5ed;
+    /* background: #f4f5ed; */
+    /* removed background color - should be set in configuration */
     margin: 0 -15px !important;
     padding: 0 15px !important;
 }
@@ -331,6 +332,10 @@ input[type="checkbox"]+label {
     margin-top: 1px !important;
 }
 
+input[id*=RadioButtonList] + label {
+    margin-top: -0.18em !important;
+}
+
 
 /* combo box (rcb) and drop down list (rddl) */
 
@@ -340,7 +345,7 @@ input[type="checkbox"]+label {
 
 .RadComboBox span.rcbInner,
 .RadDropDownList span.rddlInner {
-    background: transparent;
+    /*    background: transparent;*/
     height: 35px;
     border: 1px solid #ccc !important;
     padding-top: 0;
@@ -390,8 +395,10 @@ input[type="checkbox"]+label {
 }
 
 .RadDropDownList .rddlInner.rddlFocused {
+    /*
     border-color: #dc4f00;
     background-color: #dc4f00;
+*/
 }
 
 .RadDropDownList span.rddlInner .rddlIcon:before {
@@ -410,7 +417,7 @@ input[type="checkbox"]+label {
 }
 
 .rddlSlide .rddlPopup .rddlItem.rddlItemSelected {
-    background: #dc4f00;
+    /*    background: #dc4f00;*/
 }
 
 
