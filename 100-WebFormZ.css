@@ -1,9 +1,6 @@
 /* testing */
 
 
-/* testing */
-
-
 /* v3.3 05/9/16 */
 
 
@@ -48,7 +45,6 @@ h6 {
 [id*=Wfz] caption,
 [id*=Wfz] tr,
 [id*=Wfz] th,
-[id*=Wfz] td,
 [id*=Wfz] input,
 [id*=Wfz] textarea,
 input[type=button],
@@ -109,11 +105,12 @@ input[type=button],
 }
 
 
-/* fix position of required field indicator on small screen sizes */
+/* fix position of required field indicator on small screen sizes *
+/* label for checkboxes on small screens */
 
 label[id*=CaptionMobile] {
-    /*    line-height: 1 !important;*/
     margin: 1px !important;
+    width: 90%;
 }
 
 #MainHtml [id*=CaptionMobile].control-label.Required {
