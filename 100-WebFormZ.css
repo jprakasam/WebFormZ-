@@ -223,7 +223,7 @@ div[id*="Wfz"] .RadPanelBar .rpGroup a.rpLink > .rpOut {
 
 /* higher specificity required e.g. span + .rpText */
 
-span.rpText {
+.RadPanelBar span.rpText {
     font-size: 150% !important;
     padding: 15px 0 !important;
     color: #666;
@@ -457,6 +457,10 @@ input[id*=RadioButtonList] + label {
         top: -9999px;
         left: -9999px;
     }
+    .table-responsive td:before {
+        float: left;
+        padding-right: 20px;
+    }
     .table-responsive td,
     .table-responsive .rgAltRow td {
         border: none;
@@ -478,21 +482,10 @@ input[id*=RadioButtonList] + label {
         width: 45%;
         white-space: nowrap;
     }
-}
-
-
-/* hide elements that contain nothing */
-
-
-/*
-.table-responsive td:empty {
-    display: none;
-}
-*/
-
-.table-responsive td:before {
-    float: left;
-    padding-right: 20px;
+    /* hide elements that contain nothing */
+    .table-responsive td:empty {
+        display: none;
+    }
 }
 
 
@@ -708,19 +701,6 @@ button.rwzButton:hover {
         text-align: right;
     }
 }
-
-
-/* footer captions */
-
-
-/*
-label[id*=SaveButton_Caption],
-label[id*=DeleteButton_Caption],
-label[id*=SubmitButton_Caption] {
-    line-height: 35px !important;
-}
-*/
-
 
 /* wizard */
 
