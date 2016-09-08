@@ -1,10 +1,9 @@
 /* testing */
 
 
-/* v3.3 05/9/16 */
+/* v3.4 08/9/16 */
 
 
-/*
 body {
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-size: 16px;
@@ -20,7 +19,6 @@ h5,
 h6 {
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
-*/
 
 
 /* reset font */
@@ -183,6 +181,11 @@ div[id*="Wfz"].t-row,
 
 
 /* panel bar */
+
+.RadPanelBar .rpGroup,
+.rpSlide {
+    height: auto !important;
+}
 
 .RadPanelBar ul.rpRootGroup {
     border-color: transparent;
@@ -701,6 +704,7 @@ button.rwzButton:hover {
         text-align: right;
     }
 }
+
 
 /* wizard */
 
