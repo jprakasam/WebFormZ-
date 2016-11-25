@@ -17,6 +17,15 @@ h4,
 h5,
 h6 {
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    color: #14afca;
+}
+
+h1.BigHeader {
+    background: #14afca;
+}
+
+a.btn.PrimaryButton.LargeButton {
+    background: #14afca;
 }
 
 
@@ -731,7 +740,7 @@ button.rwzButton:hover {
 /* temporarily hide call out until find fix */
 
 span.rwzCallout {
-    display: none;
+    /* display: none; */
 }
 
 .RadWizard,
@@ -742,9 +751,9 @@ span.rwzCallout {
 }
 
 .RadWizard {
-    min-width: 19.2307692308em;
-    overflow: hidden;
-    -webkit-tap-highlight-color: transparent;
+    /* min-width: 19.2307692308em; */
+    /* overflow: hidden; */
+    /* -webkit-tap-highlight-color: transparent; */
     -webkit-touch-callout: none;
 }
 
@@ -771,16 +780,17 @@ span.rwzCallout {
 .RadWizard .rwzText {
     -ms-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
-    text-overflow: ellipsis
+    /* text-overflow: ellipsis; */
+    font-size: 0.9em;
 }
 
 .RadWizard .rwzBreadCrumb {
-    width: 100%;
-    overflow: hidden;
+    /* width: 100%; */
+    /* overflow: hidden; */
 }
 
 .RadWizard .rwzBreadCrumb .rwzLink {
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 .RadWizard .rwzBreadCrumb .rwzDisabled .rwzLink {
@@ -885,10 +895,10 @@ span.rwzCallout {
 }
 
 .RadWizard .rwzProgress {
-    display: block;
-    height: 8px;
-    text-indent: -9999px;
-    transition: width .6s ease;
+    /* display: block; */
+    /* height: 8px; */
+    /* text-indent: -9999px; */
+    /* transition: width .6s ease; */
 }
 
 .RadWizard .rwzSlider {
@@ -999,113 +1009,29 @@ span.rwzCallout {
     right: -.846153846154em;
 }
 
-*/
-/*
-.RadWizard_rtl .rwzBreadCrumb .rwzPager .rwzCallout:before,
-.RadWizard_rtl .rwzBreadCrumb .rwzPager .rwzCallout:after {
-    left: auto;
-    right: 0;
+.RadWizard.rwzHorizontal .rwzBreadCrumb .rwzLink:hover {
+    border-color: #2292a8;
+    color: #fff;
+    background-color: #14afca;
+    background-image: linear-gradient(#14afca, #14afca);
 }
 
-.RadWizard_rtl .rwzNav .rwzLI {
-    float: right;
-    margin-right: 0;
-    margin-left: .384615384615em;
+.RadWizard.rwzHorizontal .rwzBreadCrumb .rwzLink:hover:before {
+    border-color: #14afca;
+    background: #14afca linear-gradient(135deg, #14afca, #14afca);
 }
 
-.RadWizard_rtl .rwzNav .rwzRight {
-    float: left;
-    margin-right: .384615384615em;
-    margin-left: 0;
+.RadWizard.rwzHorizontal .rwzBreadCrumb .rwzLI {
+    border-style: none;
 }
 
-@media only screen and (max-width:768px) {
-    .RadWizard .rwzFooter .rwzLI {
-        width: 49%;
-        width: 42%;
-        margin-right: 2%;
-    }
-    .RadWizard .rwzFooter .rwzRight {
-        margin: 0;
-    }
-    .RadWizard .rwzButton {
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .RadWizard_rtl .rwzFooter .rwzLI {
-        float: right;
-        margin-right: 0;
-        margin-left: 2%;
-    }
-    .RadWizard_rtl .rwzFooter .rwzRight {
-        float: left;
-        margin: 0;
-    }
+.RadWizard.rwzHorizontal .rwzBreadCrumb .rwzCallout:before {
+    background: none;
 }
 
-span.rwzPager {
-    background: #dc4f00;
+.RadWizard div.rwzProgressBar {
+    border-style: none;
 }
-
-.RadWizard .rwzBreadCrumb .rwzPager {
-    background: #dc4f00;
-}
-
-span.rwzPager {
-    display: block;
-    padding: 0 .846153846154em;
-    padding: 0 1.2em;
-    color: inherit;
-    text-decoration: none;
-    white-space: nowrap;
-    cursor: default;
-}
-
-.RadWizard .rwzLink,
-.RadWizard .rwzPager {
-    display: block;
-    padding: 0 1.2em;
-    color: inherit;
-    text-decoration: none;
-    white-space: nowrap;
-    cursor: default;
-}
-
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before {
-    background: #dc4f00;
-}
-
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before,
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
-    border-color: #dc4f00;
-}
-
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before,
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
-    content: "";
-    position: absolute;
-    width: 1.92307692308em;
-    height: 1.92307692308em;
-    left: 0;
-    -moz-transform: rotate(45deg) skew(15deg, 15deg);
-    -webkit-transform: rotate(45deg) skew(15deg, 15deg);
-    -ms-transform: rotate(45deg) skew(15deg, 15deg);
-    -o-transform: rotate(45deg) skew(15deg, 15deg);
-    transform: rotate(45deg) skew(15deg, 15deg);
-    border-width: 1px;
-    border-style: solid;
-    background: #dc4f00 !important;
-}
-
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
-    background: #dc4f00;
-}
-
-.RadWizard .rwzBreadCrumb {
-    position: relative;
-}
-
- */
 
 
 /* Strength bar */
