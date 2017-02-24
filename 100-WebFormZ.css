@@ -1,13 +1,15 @@
 /* testing */
 
 
-/* v3.4 08/9/16 */
+/* v3.5 25/2/17 */
 
 body {
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    /*
     font-size: 16px;
     line-height: 1.8;
     color: #777;
+    */
 }
 
 h1,
@@ -64,7 +66,7 @@ input[type=button],
     display: inline-block;
     font: inherit !important;
     margin: 0;
-    padding: 0;
+    padding: 4px 0;
 }
 
 @media (max-width: 768px) {
@@ -99,11 +101,13 @@ input[type=button],
 /* required fields */
 
 #MainHtml [id*=Caption].control-label.Required,
-[id*=AppMultiInstanceAnswer].control-label.Required {
+[id*=AppMultiInstanceAnswer].control-label.Required,
+span.Required {
     background: none !important;
 }
 
-.control-label.Required:after {
+.control-label.Required:after,
+span.Required:after {
     content: " * ";
     color: red;
     padding-top: 0.2em;
@@ -153,7 +157,7 @@ span[disabled] {
     border: none !important;
 }
 
-[id*="SummaryRadPanelBar"] > ul {
+[id*="SummaryRadPanelBar"]>ul {
     background: #f4f5ed;
     /* note - should be set in configuration */
     margin: 0 -15px !important;
@@ -215,7 +219,7 @@ div[id*="Wfz"] span.rpExpandHandle {
 /* over ride background color property of panel item header */
 
 div[id*="Wfz"] .RadPanelBar .rpGroup a.rpLink.rpSelected,
-div[id*="Wfz"] .RadPanelBar .rpGroup a.rpLink > .rpOut {
+div[id*="Wfz"] .RadPanelBar .rpGroup a.rpLink>.rpOut {
     background-image: none !important;
 }
 
@@ -311,7 +315,7 @@ img[src*=NoImageAvailable] {
 
 [id*="RadTextArea"],
 [id*="TextBox_wrapper"] {
-    width: 100% !important;
+    width: 90% !important;
 }
 
 
@@ -360,7 +364,7 @@ input[type="checkbox"]+label {
     width: 90% !important;
 }
 
-input[id*=RadioButtonList] + label {
+input[id*=RadioButtonList]+label {
     /* margin-top: -0.18em !important */
 }
 
@@ -404,7 +408,7 @@ input[id*=RadioButtonList] + label {
 
 @media (max-width: 468px) {
     .RadComboBox {
-        width: 100% !important;
+        width: 90% !important;
     }
 }
 
