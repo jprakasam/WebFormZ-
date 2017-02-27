@@ -208,6 +208,12 @@ div[id*="Wfz"].t-row,
     border-color: transparent;
 }
 
+.rpItem,
+.rpGroup,
+.rpSlide {
+    overflow: visible !important;
+}
+
 
 /* hide expand mode */
 
