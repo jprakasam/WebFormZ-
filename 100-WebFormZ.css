@@ -179,6 +179,7 @@ input[id*="Tooltip"] {
 .ValidationError {
     display: block;
     padding: 5px 0 !important;
+    float: left;
 }
 
 
@@ -198,6 +199,12 @@ div[id*="Wfz"].t-row,
 
 
 /* panel bar */
+/* fix ie overflow issue */
+
+.rwzContent,
+.rwzContent .RadPanelBar {
+        overflow: visible !important;
+}
 
 .RadPanelBar .rpGroup,
 .rpSlide {
@@ -308,13 +315,14 @@ img[src*=NoImageAvailable] {
 
 
 /* text and text area wrappers */
+/* concatenated partial selector ([id*="RadText"]) and .RadInput.riSingle to exclude .riStrengthBar.riStrengthBar field wrappers */
 
-[id*="RadText"] {
+[id*="RadText"].RadInput.riSingle {
     width: auto !important;
 }
 
 @media (min-width: 768px) {
-    [id*="RadText"] {
+    [id*="RadText"].RadInput.riSingle {
         min-width: 400px;
     }
 }
