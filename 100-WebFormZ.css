@@ -62,6 +62,13 @@ input[type=button],
     line-height: 1.6 !important;
 }
 
+
+/* labels */
+
+label {
+    margin-left: 0;
+}
+
 .control-label {
     display: inline-block;
     font: inherit !important;
@@ -176,6 +183,7 @@ input[id*="Tooltip"] {
 
 /* errors */
 
+.Important,
 .ValidationError {
     display: block;
     padding: 5px 0 !important;
@@ -199,11 +207,13 @@ div[id*="Wfz"].t-row,
 
 
 /* panel bar */
+
+
 /* fix ie overflow issue */
 
 .rwzContent,
 .rwzContent .RadPanelBar {
-        overflow: visible !important;
+    overflow: visible !important;
 }
 
 .RadPanelBar .rpGroup,
@@ -315,17 +325,25 @@ img[src*=NoImageAvailable] {
 
 
 /* text and text area wrappers */
+
+
 /* concatenated partial selector ([id*="RadText"]) and .RadInput.riSingle to exclude .riStrengthBar.riStrengthBar field wrappers */
 
 [id*="RadText"].RadInput.riSingle {
     width: auto !important;
 }
 
-@media (min-width: 768px) {
+[id*='RadTextArea_wrapper'] {
+    width: 100% !important;
+    display: block;
+}
+
+
+/* @media (min-width: 768px) {
     [id*="RadText"].RadInput.riSingle {
         min-width: 400px;
     }
-}
+} */
 
 [id*="RadTextArea"],
 [id*="TextBox_wrapper"] {
@@ -364,7 +382,9 @@ table[id*=RadioButtonList] {
 
 [id*="RadioButtonList"] label,
 [class*="CheckBox"] label {
-    margin-left: 10px;
+    /* reset due to layout issues in Firefox and IE */
+    /* margin-left: 10px; */
+    margin-left: 0;
     font-weight: 400;
     color: #000 !important;
 }
