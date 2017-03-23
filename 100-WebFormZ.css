@@ -652,16 +652,18 @@ div[id*=Wfz__Finder] {
 
 /* buttons */
 
-input[type=button],
+
+/* input[type=button],
 button:not(.rcbActionButton) {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-}
+} */
 
 input[id*=ZoomPictureButton] {
     display: inline-block !important;
 }
 
-button.rwzButton,
+
+/* button.rwzButton,
 input[value=Save],
 input.TextButton.Save,
 input.SaveAndNew,
@@ -727,7 +729,7 @@ input.SaveAndNew:hover,
 #MainHtml input[id*=Find]:hover,
 .RadUpload .ruButton:hover {
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
-}
+} */
 
 input[id*=FormButtonSubmit] {
     width: 100% !important;
@@ -990,7 +992,7 @@ span.rwzCallout {
     display: block;
     min-width: 5.76923076923em;
     padding: 0 1.15384615385em;
-    border: 1px solid #828282;
+    border: none !important;
     cursor: default;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
