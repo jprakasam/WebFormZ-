@@ -186,8 +186,17 @@ input[id*="Tooltip"] {
 .Important,
 .ValidationError {
     display: block;
-    padding: 5px 0 !important;
-    float: left;
+    margin: 5px 0 !important;
+    /* float: left; */
+}
+
+/* clear fix to prevent validation messages wrapping */
+
+.ValidationError:before {
+    content: " ";
+    display: block;
+    clear: both;
+    height: 1px !important;
 }
 
 
@@ -330,7 +339,7 @@ img[src*=NoImageAvailable] {
 /* concatenated partial selector ([id*="RadText"]) and .RadInput.riSingle to exclude .riStrengthBar.riStrengthBar field wrappers */
 
 [id*="RadText"].RadInput.riSingle {
-    width: auto !important;
+    /* width: auto; */
 }
 
 [id*='RadTextArea_wrapper'] {
@@ -347,7 +356,7 @@ img[src*=NoImageAvailable] {
 
 [id*="RadTextArea"],
 [id*="TextBox_wrapper"] {
-    width: 90% !important;
+    /* width: 90% !important; */
 }
 
 
