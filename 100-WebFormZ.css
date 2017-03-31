@@ -4,15 +4,16 @@
 /* v3.5 25/2/17 */
 
 body {
-    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     /*
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     font-size: 16px;
     line-height: 1.8;
     color: #777;
     */
 }
 
-h1,
+
+/*h1,
 h2,
 h3,
 h4,
@@ -20,7 +21,7 @@ h5,
 h6 {
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     color: #14afca;
-}
+}*/
 
 h1.BigHeader {
     background: #14afca;
@@ -34,7 +35,16 @@ a.btn.PrimaryButton.LargeButton {
 /* reset font */
 
 [id*=Wfz] div,
-[id*=Wfz] span:not(.rcbIcon),
+
+/* [id*=Wfz] span:not(.rcbIcon), */
+
+
+/* [id*=Wfz] span:not([id*='BusinessLabel']), */
+
+[id*=Wfz] .riSingle,
+
+/* text input wrappers */
+
 [id*=Wfz] p,
 [id*=Wfz] em,
 [id*=Wfz] small,
@@ -189,6 +199,7 @@ input[id*="Tooltip"] {
     margin: 5px 0 !important;
     /* float: left; */
 }
+
 
 /* clear fix to prevent validation messages wrapping */
 
@@ -1110,11 +1121,11 @@ span[id*=RadTextBox_passwordStrengthIndicator].riStrengthBar.riStrengthBarL5 {
 /* responsive form pagination */
 
 #wfznavParent button {
-    border-color: #14afca;
+    /* border-color: #14afca;
     color: #fff;
     background-color: #14afca;
     background-image: linear-gradient(#54cbe0, #14afca);
-    /* margin-right: 10px; */
+    margin-right: 10px; */
 }
 
 #wfz_gotonav {
@@ -1139,5 +1150,5 @@ span[id*=RadTextBox_passwordStrengthIndicator].riStrengthBar.riStrengthBarL5 {
 #wfz_gotonav a:hover,
 #wfz_gotonav a:focus,
 #wfz_gotonav a:active {
-    background: #dc4f00;
+    /* background: #dc4f00; */
 }
