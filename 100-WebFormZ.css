@@ -137,7 +137,7 @@ span.Required:after {
 /* label for checkboxes on small screens */
 
 label[id*=CaptionMobile] {
-    margin: 1px !important;
+    /* margin: 1px !important; */
     width: 90%;
 }
 
@@ -420,6 +420,17 @@ input[type="checkbox"]+label {
 
 input[id*=RadioButtonList]+label {
     /* margin-top: -0.18em !important */
+}
+
+/* set checkbox margin top for single checkboxes, then over ride for check box list */
+
+[id*='CheckBox'] {
+    display: inline-block;
+    margin: 6px 0 0 !important;
+}
+
+.CheckBoxList [id*='CheckBox'] {
+    margin: 0 0 0 !important;
 }
 
 
