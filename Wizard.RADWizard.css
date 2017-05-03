@@ -45,7 +45,8 @@
 }
 
 .RadWizard_WFZ-Wizard .rwzHovered.rwzButton,
-.RadWizard_WFZ-Wizard .rwzHovered .rwzLink {
+.RadWizard_WFZ-Wizard .rwzHovered .rwzLink,
+.RadWizard_WFZ-Wizard .rwzLI:hover .rwzLink {
     border-color: #fff;
     color: white;
     /* background-color: #fff; */
