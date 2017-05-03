@@ -1,15 +1,7 @@
 /* Updated 2/5/17 */
 
-h1.BigHeader {
-    background: #14afca;
-}
 
-a.btn.PrimaryButton.LargeButton {
-    background: #14afca;
-}
-
-
-/* reset font */
+/* Reset Fonts for all Telerik Controls */
 
 [id*=Wfz] div,
 [id*=Wfz] .riSingle,
@@ -37,7 +29,7 @@ input[type=button],
 .rpTemplate,
 .RadComboBoxDropDown {
     font: inherit !important;
-    line-height: 1.6 !important;
+    line-height: 22px !important;
 }
 
 
@@ -68,6 +60,7 @@ label {
     display: block !important;
     width: 100%;
 }
+
 
 /* required fields */
 
@@ -257,11 +250,10 @@ div[id*="Wfz"] .RadPanelBar .rpGroup a.rpLink>.rpOut {
 
 /* inputs */
 
-div[id*="Wfz"] .riTextBox {
+.riTextBox {
     padding: 5px 10px !important;
     border: 1px solid #ccc !important;
     height: 35px;
-    font-weight: 400;
     color: #000 !important;
 }
 
@@ -345,12 +337,12 @@ img[src*=NoImageAvailable] {
 
 .CheckBoxList br {
     display: block;
-    height: 1px;
+    line-height: 1px;
     content: " ";
 }
 
 table[id*=RadioButtonList] {
-    width: 100%;
+    /* width: 100%; */
 }
 
 [id*="RadioButtonList"] td,
@@ -370,7 +362,7 @@ table[id*=RadioButtonList] {
 input[type="radio"]+label,
 input[type="checkbox"]+label {
     font-size: 0.92em !important;
-    display: inline-block;
+    /* display: inline-block; */
     line-height: 1.2em !important;
     margin-top: 1px !important;
     width: 90% !important;
