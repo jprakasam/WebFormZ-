@@ -33,11 +33,12 @@ input[type=button],
 }
 
 
-/* labels */
+/* Labels */
 
-label {
+
+/* label {
     margin-left: 0;
-}
+} */
 
 .control-label {
     display: inline-block;
@@ -253,7 +254,7 @@ div[id*="Wfz"] .RadPanelBar .rpGroup a.rpLink>.rpOut {
 .riTextBox {
     padding: 5px 10px !important;
     border: 1px solid #ccc !important;
-    height: 35px;
+    height: 35px !important;
     color: #000 !important;
 }
 
@@ -566,17 +567,6 @@ div[id*=Wfz__Finder] {
 
 
 /* calendar icons and hover state */
-
-.RadCalendar .rcFastPrev:hover,
-.RadCalendar .rcPrev:hover,
-.RadCalendar .rcNext:hover,
-.RadCalendar .rcFastNext:hover,
-.RadCalendar .rcFastPrev:hover:before,
-.RadCalendar .rcPrev:hover:before,
-.RadCalendar .rcNext:hover:before,
-.RadCalendar .rcFastNext:hover:before {
-    color: #dc4f00 !important;
-}
 
 .RadPicker .rcCalPopup:hover:before,
 .RadPicker .rcCalPopup:focus:before,
