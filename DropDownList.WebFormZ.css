@@ -21,8 +21,8 @@
 .RadDropDownList_WebFormZ .rddlIcon {
     width: 24px;
     height: 24px;
-    top: 50%;
-    right: 4px;
+    top: 50% !important;
+    right: 4px !important;
     margin-top: -12px;
     background-image: url('Common/radActionsSprite.png');
     background-position: -13px -63px
