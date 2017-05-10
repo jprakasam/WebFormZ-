@@ -42,7 +42,7 @@
 }
 
 .RadComboBox_WebFormZ .rcbInput {
-    color: #555;
+    color: #555 !important;
     font-size: inherit;
     font-family: inherit
 }

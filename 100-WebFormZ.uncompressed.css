@@ -4,7 +4,6 @@
 /* Reset Fonts for all Telerik Controls */
 
 [id*=Wfz] div,
-[id*=Wfz] .riSingle,
 [id*=Wfz] p,
 [id*=Wfz] em,
 [id*=Wfz] small,
@@ -22,10 +21,8 @@
 [id*=Wfz] caption,
 [id*=Wfz] tr,
 [id*=Wfz] th,
-[id*=Wfz] input,
 [id*=Wfz] textarea,
-input[type=button],
-.RadComboBoxDropDown {
+input[type=button] {
     font: inherit !important;
     line-height: 22px !important;
 }
@@ -248,9 +245,7 @@ div[id*="Wfz"] .RadPanelBar .rpGroup a.rpLink>.rpOut {
 
 .riTextBox {
     padding: 5px 10px !important;
-    border: 1px solid #ccc !important;
-    height: 35px !important;
-    color: #000 !important;
+    height: 35px !important
 }
 
 
@@ -606,10 +601,20 @@ div[id*=Wfz__Finder] {
 }
 
 [id*=RadListBox_DropDown].RadComboBoxDropDown li label {
-    font-size: 0.92em !important;
-    /* display: inline-block; */
+    font-size: 0.9em !important;
     line-height: 1.2em !important;
     color: #000 !important;
+}
+
+/* Overrides */
+
+.RadComboBox .rcbActionButton {
+    right: inherit !important;
+}
+
+.RadComboBox .rcbActionButton .rcbIconDown:before {
+    content: "\e00e" !important;
+    font: 1.6em/1 "TelerikWebUI",sans-serif !important;
 }
 
 
