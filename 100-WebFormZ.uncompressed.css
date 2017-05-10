@@ -405,7 +405,7 @@ input[id*=RadioButtonList]+label {
 
 .RadComboBox span.rcbInner input.rcbInput {
     height: 100%;
-    padding: 0 10px;
+    /*padding: 0 10px;*/
 }
 
 .RadComboBox span.rcbInner.rcbFocused input:focus {
@@ -413,6 +413,13 @@ input[id*=RadioButtonList]+label {
     outline: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+
+/* over ride icon setting to make consistent with rddl */
+
+.RadComboBox .rcbActionButton .rcbIconDown:before {
+    content: "\e00e";
+    font: 1.6em/1 "TelerikWebUI",sans-serif;
 }
 
 
@@ -698,7 +705,7 @@ button.rwzButton.rwzPrevious:hover {
 
 /* next button hovered state */
 
-button.rwzButton:hover {
+/*button.rwzButton:hover {
     background-color: #b34000;
 }
 
@@ -706,7 +713,7 @@ button.rwzButton:hover {
     border-color: transparent;
     color: #000;
     background-color: transparent;
-}
+}*/
 
 
 /* footer */
