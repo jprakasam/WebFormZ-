@@ -1,0 +1,165 @@
+html body .RadInput_WebFormZ .riTextBox,
+html body .RadInputMgr_WebFormZ {
+    border-color: #ccc;
+    border-radius: 0;
+    color: #555;
+    background: #fff;
+    font: inherit;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset
+}
+
+html body .RadInputMgr_WebFormZ {
+    padding-left: 10px;
+    height: 34px;
+    box-sizing: border-box
+}
+
+.RadInput_WebFormZ.riSingle .riTextBox,
+.RadForm_WebFormZ.RadForm.rfdTextbox input.riTextBox.rfdDecorated {
+    height: 34px
+}
+
+*+html .RadInput_WebFormZ.riSingle .riTextBox,
+*+html .RadForm_WebFormZ.RadForm.rfdTextbox input.riTextBox.rfdDecorated {
+    height: 29px;
+    line-height: 29px
+}
+
+.RadInput_WebFormZ.riSingle textarea.riTextBox,
+html .RadInput_WebFormZ textarea.riTextBox {
+    height: auto
+}
+
+html body .RadInput_WebFormZ .riHover,
+html body .RadInput_Hover_WebFormZ {
+    border-color: #adadad;
+    color: #555
+}
+
+html body .RadInput_WebFormZ .riFocused,
+html body .RadInput_Focused_WebFormZ {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6)
+}
+
+.RadInput_WebFormZ .riTextBox.riEmpty,
+html body .RadInput_Empty_WebFormZ {
+    color: #909090
+}
+
+html body .RadInput_WebFormZ .riRead,
+html body .RadInput_Read_WebFormZ,
+html body .RadInput_WebFormZ .riDisabled,
+html body .RadInput_Disabled_WebFormZ {
+    border-color: #909090;
+    color: #909090;
+    background: #eee
+}
+
+html body .RadInput_WebFormZ .riError,
+html body .RadInput_Error_WebFormZ,
+.RadForm.rfdTextbox .RadInput_WebFormZ .riError[type="text"],
+.RadForm.rfdTextbox .RadInput_Error_WebFormZ[type="text"] {
+    border-color: #a94442
+}
+
+html body .RadInput_WebFormZ .riNegative,
+html body .RadInput_Negative_WebFormZ {
+    color: #6e6e6e
+}
+
+.RadInput_WebFormZ a {
+    background: transparent no-repeat url('Common/radActionsSprite.png')
+}
+
+.RadInput_WebFormZ .riBtn a {
+    width: 17px;
+    height: 34px;
+    line-height: 34px;
+    background-position: -14px -4864px
+}
+
+.RadInput_WebFormZ a.riButton {
+    background-position: -14px -4864px
+}
+
+.RadInput_WebFormZ a.riButton:hover {
+    background-position: -64px -4864px
+}
+
+.RadInput_WebFormZ .riSpin a {
+    width: 20px;
+    height: 17px;
+    line-height: 17px
+}
+
+.RadInput_WebFormZ.riContSpinButtons,
+.RadInput_WebFormZ .riContentWrapper {
+    padding: 0;
+    position: relative
+}
+
+html body .RadInput_WebFormZ.riContSpinButtons .riTextBox {
+    padding-right: 34px
+}
+
+*+html body .RadInput_WebFormZ.riContSpinButtons .riTextBox {
+    margin-top: -1px;
+    margin-bottom: -1px
+}
+
+.RadInput_WebFormZ a.riUp,
+.RadInput_WebFormZ a.riDown {
+    height: 17px;
+    position: absolute;
+    right: 0;
+    width: 33px
+}
+
+.RadInput_WebFormZ a.riUp {
+    top: 0;
+    border-left: 1px solid #ccc;
+    background-position: -9px -16px
+}
+
+.RadInput_WebFormZ a.riUp:hover {
+    background-position: -59px -16px
+}
+
+.RadInput_WebFormZ a.riDown {
+    bottom: 0;
+    border-left: 1px solid #ccc;
+    background-position: -9px -68px
+}
+
+.RadInput_WebFormZ a.riDown:hover {
+    background-position: -59px -68px
+}
+
+.RadInput_WebFormZ .riLabel {
+    color: #555
+}
+
+.RadInput_WebFormZ .riResizeIcon {
+    background: transparent -17px -2417px no-repeat url('Common/radActionsSprite.png');
+    opacity: .5;
+    filter: alpha(opacity=50);
+    width: 16px;
+    height: 16px;
+    margin-left: -16px
+}
+
+html body .RadInputRTL_WebFormZ .riError,
+html body .RadInputRTL_Error_WebFormZ {
+    background-position: 3px -298px
+}
+
+.RadInputRTL_WebFormZ .riResizeIcon {
+    background-position: -17px -2467px
+}
+
+.RadForm.rfdTextbox .RadInputRTL_WebFormZ .riError[type="text"],
+.RadForm.rfdTextbox .RadInputRTL_Error_WebFormZ[type="text"] {
+    background-position: 3px -298px
+}

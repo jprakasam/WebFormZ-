@@ -17,7 +17,6 @@
 [id*=Wfz] li,
 [id*=Wfz] fieldset,
 [id*=Wfz] form,
-[id*=Wfz] label,
 [id*=Wfz] legend,
 [id*=Wfz] table,
 [id*=Wfz] caption,
@@ -26,7 +25,6 @@
 [id*=Wfz] input,
 [id*=Wfz] textarea,
 input[type=button],
-.rpTemplate,
 .RadComboBoxDropDown {
     font: inherit !important;
     line-height: 22px !important;
@@ -36,13 +34,9 @@ input[type=button],
 /* Labels */
 
 
-/* label {
-    margin-left: 0;
-} */
-
 .control-label {
     display: inline-block;
-    font: inherit !important;
+    font-weight: normal !important;
     margin: 0;
     padding: 4px 0;
 }
@@ -69,10 +63,10 @@ input[type=button],
 [id*=AppMultiInstanceAnswer].control-label.Required,
 span.Required {
     background: none !important;
+    padding-left: 0;
 }
 
-.control-label.Required:after,
-span.Required:after {
+.control-label.Required:before, span.Required:before {
     content: " * ";
     color: red;
     padding-top: 0.2em;
@@ -105,14 +99,14 @@ label[id*=CaptionMobile] {
 /* read only fields */
 
 span[disabled] {
-    background: #fafafa;
-    padding: 5px 10px;
-    min-width: 160px;
+    /* background: #fafafa; */
+    /* padding: 5px 10px; */
+    /* min-width: 160px; */
     display: inline-block;
     min-height: 35px;
-    border: 1px solid #ddd;
-    margin: 0;
-    font-weight: 400;
+    /* border: 1px solid #ddd; */
+    /* margin: 0; */
+    /* font-weight: 400; */
 }
 
 
@@ -396,7 +390,7 @@ input[id*=RadioButtonList]+label {
 .RadDropDownList span.rddlInner {
     /*    background: transparent;*/
     height: 35px;
-    border: 1px solid #ccc !important;
+    /* border: 1px solid #ccc !important; */
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -433,8 +427,8 @@ input[id*=RadioButtonList]+label {
 /* drop down list (rddl) */
 
 .RadDropDownList {
-    font: inherit !important;
-    width: 70% !important;
+    /* font: inherit !important; */
+    /* width: 70% !important; */
 }
 
 .RadDropDownList .rddlFakeInput {
