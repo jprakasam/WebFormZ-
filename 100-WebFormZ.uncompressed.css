@@ -1,6 +1,3 @@
-/* Updated 2/5/17 */
-
-
 /* Reset Fonts for all Telerik Controls */
 
 [id*=Wfz] div,
@@ -441,9 +438,9 @@ input[id*=RadioButtonList]+label {
     height: 35px;
 }
 
-.RadDropDownList span.rddlInner .rddlIcon:before {
+/*.RadDropDownList span.rddlInner .rddlIcon:before {
     top: 0.2em !important;
-}
+}*/
 
 
 /* drop down list items */
@@ -536,6 +533,7 @@ div[id*=Wfz__Finder] .btn {
     height: 35px;
 }
 
+
 /* Calendar Picker */
 
 .RadPicker .rcCalPopup,
@@ -582,11 +580,12 @@ div[id*=Wfz__Finder] .btn {
 
 [id*=RadListBox_DropDown].RadComboBoxDropDown li {
     padding: 5px 10px;
+    margin: 0 1px !important;
 }
 
-[id*=RadListBox_DropDown].RadComboBoxDropDown li label {
+/*[id*=RadListBox_DropDown].RadComboBoxDropDown li label {
     margin-left: -4px;
-}
+}*/
 
 [id*=RadListBox_DropDown].RadComboBoxDropDown .rcbHovered {
     /* background: #dc4f00; */
@@ -597,11 +596,11 @@ div[id*=Wfz__Finder] .btn {
     /* color: #fff !important; */
 }
 
-[id*=RadListBox_DropDown].RadComboBoxDropDown li label {
+/*[id*=RadListBox_DropDown].RadComboBoxDropDown li label {
     font-size: 0.9em !important;
     line-height: 1.2em !important;
     color: #000 !important;
-}
+}*/
 
 
 /* Overrides */
@@ -787,7 +786,7 @@ a.rwzLink.btn.PrimaryButton {
     font-size: inherit;
 }
 
-.RadWizard .rwzLink > .rwzText {
+.RadWizard .rwzLink>.rwzText {
     -ms-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     /* text-overflow: ellipsis; */
@@ -973,6 +972,7 @@ a.rwzLink.btn.PrimaryButton {
     text-align: center;
     outline: 0;
 }
+
 
 /*.RadWizard .rwzButton .rwzText {
     line-height: 32px;
