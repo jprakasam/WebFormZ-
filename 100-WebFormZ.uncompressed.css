@@ -411,8 +411,9 @@ input[id*=RadioButtonList]+label {
 /* over ride icon setting to make consistent with rddl */
 
 .RadComboBox .rcbActionButton .rcbIconDown:before {
-    content: "\e00e";
-    font: 1.6em/1 "TelerikWebUI", sans-serif;
+    content: "\e00e" !important;
+    font-size: 16px !important;
+    line-height: 22px !important;
 }
 
 
