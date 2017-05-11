@@ -12,7 +12,7 @@
 }
 
 .RadCalendar_WebFormZ .rcTitlebar table {
-    font: inherit;
+    font: inherit
 }
 
 .RadCalendar_WebFormZ .rcTitlebar .rcPrev,
@@ -91,7 +91,7 @@
 
 .RadCalendar_WebFormZ .rcRow td {
     border-color: transparent;
-    padding: .5em;
+    padding: .5em !important
 }
 
 .RadCalendar_WebFormZ .rcMain .rcRow a,
@@ -157,7 +157,7 @@
 
 .RadCalendarMonthView_WebFormZ {
     width: 203px;
-    font: 14px/1.42857 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: inherit;
     border-radius: 4px;
     border-color: #ddd;
     background: #fff;
@@ -251,7 +251,7 @@
 }
 
 table.RadCalendarTimeView_WebFormZ {
-    font: 14px/1.42857 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font: inherit;
     border-color: #ddd;
     border-radius: 4px;
     background: #fff;
