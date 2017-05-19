@@ -274,26 +274,26 @@
 }
 
 .RadWizard .rwzButton {
-    display: block;
-    min-width: 5.76923077em;
-    padding: 0 1.15384615em;
-    font-size: inherit;
-    font-family: inherit;
-    border: 1px solid #828282;
-    cursor: default;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-align: center;
-    outline: 0
+    /* display: block; */
+    /* min-width: 5.76923077em; */
+    /* padding: 0 1.15384615em; */
+    /* font-size: inherit; */
+    /* font-family: inherit; */
+    /* border: 1px solid #828282; */
+    /* cursor: default; */
+    /* -webkit-touch-callout: none; */
+    /* -webkit-user-select: none; */
+    /* -khtml-user-select: none; */
+    /* -moz-user-select: none; */
+    /* -ms-user-select: none; */
+    /* user-select: none; */
+    /* text-align: center; */
+    /* outline: 0; */
 }
 
 .RadWizard .rwzButton .rwzText {
-    line-height: 32px;
-    vertical-align: top
+    /* line-height: 32px; */
+    /* vertical-align: top; */
 }
 
 .RadWizard .rwzCancelWrapper {

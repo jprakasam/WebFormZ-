@@ -18,8 +18,7 @@
 [id*=Wfz] caption,
 [id*=Wfz] tr,
 [id*=Wfz] th,
-[id*=Wfz] textarea,
-input[type=button] {
+[id*=Wfz] textarea {
     font: inherit !important;
     line-height: 22px !important;
 }

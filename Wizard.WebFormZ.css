@@ -5,27 +5,27 @@
 }
 
 .RadWizard_WebFormZ .rwzButton {
-    padding: 6px 12px;
-    border-radius: 4px;
-    border-color: #ccc;
-    color: #333;
-    background-color: #fff
+    /* padding: 6px 12px; */
+    /* border-radius: 4px; */
+    /* border-color: #ccc; */
+    /* color: #333; */
+    /* background-color: #fff; */
 }
 
 .RadWizard_WebFormZ .rwzButton .rwzText {
-    line-height: inherit
+    /* line-height: inherit */
 }
 
 .RadWizard_WebFormZ .rwzButton.rwzHovered {
-    border-color: #adadad;
-    color: #333;
-    background-color: #e6e6e6
+    /* border-color: #adadad; */
+    /* color: #333; */
+    /* background-color: #e6e6e6 */
 }
 
 .RadWizard_WebFormZ .rwzButton.rwzClicked {
-    border-color: #adadad;
-    color: #333;
-    background-color: #e6e6e6
+    /* border-color: #adadad; */
+    /* color: #333; */
+    /* background-color: #e6e6e6 */
 }
 
 .RadWizard_WebFormZ .rwzButton.rwzDisabled {
