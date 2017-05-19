@@ -735,8 +735,7 @@ input[id*=FormButtonSubmit] {
 
 /* temporarily hide call out until find fix */
 
-span.rwzCallout {
-    /* display: none; */
+/*span.rwzCallout {
 }
 
 .RadWizard,
@@ -747,9 +746,6 @@ span.rwzCallout {
 }
 
 .RadWizard {
-    /* min-width: 19.2307692308em; */
-    /* overflow: hidden; */
-    /* -webkit-tap-highlight-color: transparent; */
     -webkit-touch-callout: none;
 }
 
@@ -790,17 +786,13 @@ a.rwzLink.btn.PrimaryButton {
 .RadWizard .rwzLink>.rwzText {
     -ms-text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
-    /* text-overflow: ellipsis; */
     font-size: 0.9em;
 }
 
 .RadWizard .rwzBreadCrumb {
-    /* width: 100%; */
-    /* overflow: hidden; */
 }
 
 .RadWizard .rwzBreadCrumb .rwzLink {
-    /* cursor: pointer; */
 }
 
 .RadWizard .rwzBreadCrumb .rwzDisabled .rwzLink {
@@ -905,10 +897,6 @@ a.rwzLink.btn.PrimaryButton {
 }
 
 .RadWizard .rwzProgress {
-    /* display: block; */
-    /* height: 8px; */
-    /* text-indent: -9999px; */
-    /* transition: width .6s ease; */
 }
 
 .RadWizard .rwzSlider {
@@ -1034,7 +1022,7 @@ a.rwzLink.btn.PrimaryButton {
 
 .RadWizard div.rwzProgressBar {
     border-style: none;
-}
+}*/
 
 
 /* Strength bar */
