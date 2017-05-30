@@ -56,13 +56,13 @@
 }
 
 .RadWizard_WebFormZ .rwzBreadCrumb .rwzHovered .rwzLink {
-    border-color: #adadad;
+    border-color: transparent;
     color: #333;
     background-color: #e6e6e6
 }
 
 .RadWizard_WebFormZ .rwzBreadCrumb .rwzHovered .rwzLink:before {
-    border-color: #adadad;
+    border-color: transparent;
     background: #e6e6e6
 }
 

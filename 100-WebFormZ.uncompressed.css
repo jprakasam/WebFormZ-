@@ -1,13 +1,6 @@
 /* Reset Fonts for all Telerik Controls */
 
-[id*=Wfz] div,
-[id*=Wfz] p,
-[id*=Wfz] em,
-[id*=Wfz] small,
-[id*=Wfz] strong,
-[id*=Wfz] b,
 [id*=Wfz] u,
-[id*=Wfz] i,
 [id*=Wfz] ol,
 [id*=Wfz] ul,
 [id*=Wfz] li,
@@ -17,8 +10,7 @@
 [id*=Wfz] table,
 [id*=Wfz] caption,
 [id*=Wfz] tr,
-[id*=Wfz] th,
-[id*=Wfz] textarea {
+[id*=Wfz] th {
     font: inherit !important;
     line-height: 22px !important;
 }
@@ -152,6 +144,11 @@ input[id*="Tooltip"] {
 div[id*="Wfz"].t-row,
 .t-row {
     margin: 0 -15px 25px -15px;
+}
+
+div[id*="Wfz"].t-row:last-child,
+.t-row:last-child {
+    margin: 0 -15px
 }
 
 @media (max-width: 767px) {
@@ -440,6 +437,7 @@ input[id*=RadioButtonList]+label {
     height: 35px;
 }
 
+
 /*.RadDropDownList span.rddlInner .rddlIcon:before {
     top: 0.2em !important;
 }*/
@@ -585,6 +583,7 @@ div[id*=Wfz__Finder] .btn {
     margin: 0 1px !important;
 }
 
+
 /*[id*=RadListBox_DropDown].RadComboBoxDropDown li label {
     margin-left: -4px;
 }*/
@@ -597,6 +596,7 @@ div[id*=Wfz__Finder] .btn {
 [id*=RadListBox_DropDown].RadComboBoxDropDown .rcbHovered label {
     /* color: #fff !important; */
 }
+
 
 /*[id*=RadListBox_DropDown].RadComboBoxDropDown li label {
     font-size: 0.9em !important;
@@ -736,24 +736,32 @@ input[id*=FormButtonSubmit] {
 
 /* temporarily hide call out until find fix */
 
-span.rwzCallout {
-}
+span.rwzCallout {}
 
-.RadWizard,.RadWizard .rwzBreadCrumb,.RadWizard .rwzProgressBar,.RadWizard .rwzContent {
-    box-sizing: border-box
+.RadWizard,
+.RadWizard .rwzBreadCrumb,
+.RadWizard .rwzProgressBar,
+.RadWizard .rwzContent {
+    /* box-sizing: border-box */
 }
 
 .RadWizard {
     -webkit-touch-callout: none
 }
 
-.RadWizard .rwzUL,.RadWizard .rwzNav {
-    margin: 0;
-    padding: 0
+.RadWizard .rwzUL,
+.RadWizard .rwzNav {
+    /* margin: 0; */
+    /* padding: 0; */
 }
 
-.RadWizard .rwzHeader.rwzHidden,.RadWizard .rwzBreadCrumb.rwzHidden,.RadWizard .rwzProgressBar.rwzHidden,.RadWizard .rwzLI.rwzHidden,.RadWizard .rwzButton.rwzHidden,.RadWizard .rwzCancelWrapper.rwzHidden {
-    display: none
+.RadWizard .rwzHeader.rwzHidden,
+.RadWizard .rwzBreadCrumb.rwzHidden,
+.RadWizard .rwzProgressBar.rwzHidden,
+.RadWizard .rwzLI.rwzHidden,
+.RadWizard .rwzButton.rwzHidden,
+.RadWizard .rwzCancelWrapper.rwzHidden {
+    /* display: none */
 }
 
 .RadWizard .rwzUL {
@@ -761,23 +769,9 @@ span.rwzCallout {
     overflow-x: auto
 }
 
-.rwzBreadCrumb {
-    background: #f4f5ed
-}
-
-a.rwzLink.btn.PrimaryButton:before {
-    content: " ";
-    background: inherit
-}
-
-a.rwzLink.btn.PrimaryButton {
-    text-align: left;
-    font-size: inherit
-}
-
 .RadWizard .rwzLink>.rwzText {
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
+    /* -ms-text-overflow: ellipsis; */
+    /* -o-text-overflow: ellipsis; */
     font-size: .9em
 }
 
@@ -823,17 +817,18 @@ a.rwzLink.btn.PrimaryButton {
     font-size: 10.74449999999px
 }
 
-.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before,.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
+.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:before,
+.RadWizard .rwzBreadCrumb .rwzPager .rwzCallout:after {
     content: "";
     position: absolute;
     width: 1.92307692308em;
     height: 1.92307692308em;
     left: 0;
-    -moz-transform: rotate(45deg) skew(15deg,15deg);
-    -webkit-transform: rotate(45deg) skew(15deg,15deg);
-    -ms-transform: rotate(45deg) skew(15deg,15deg);
-    -o-transform: rotate(45deg) skew(15deg,15deg);
-    transform: rotate(45deg) skew(15deg,15deg);
+    -moz-transform: rotate(45deg) skew(15deg, 15deg);
+    -webkit-transform: rotate(45deg) skew(15deg, 15deg);
+    -ms-transform: rotate(45deg) skew(15deg, 15deg);
+    -o-transform: rotate(45deg) skew(15deg, 15deg);
+    transform: rotate(45deg) skew(15deg, 15deg);
     border-width: 1px;
     border-style: solid
 }
@@ -846,13 +841,15 @@ a.rwzLink.btn.PrimaryButton {
     top: 2.23076923077em
 }
 
-.RadWizard .rwzBreadCrumb.rwzLeftImages .rwzImage,.RadWizard .rwzBreadCrumb.rwzRightImages .rwzImage {
+.RadWizard .rwzBreadCrumb.rwzLeftImages .rwzImage,
+.RadWizard .rwzBreadCrumb.rwzRightImages .rwzImage {
     vertical-align: middle;
     display: inline-block;
     margin-left: -30px
 }
 
-.RadWizard .rwzBreadCrumb.rwzLeftImages span.rwzImage,.RadWizard .rwzBreadCrumb.rwzRightImages span.rwzImage {
+.RadWizard .rwzBreadCrumb.rwzLeftImages span.rwzImage,
+.RadWizard .rwzBreadCrumb.rwzRightImages span.rwzImage {
     width: 16px;
     height: 16px
 }
@@ -874,9 +871,9 @@ a.rwzLink.btn.PrimaryButton {
 }
 
 .RadWizard .rwzProgressBar {
-    width: 100%;
-    top: 3.84615384615em;
-    overflow: hidden
+    /* width: 100%; */
+    /* top: 3.84615384615em; */
+    /* overflow: hidden; */
 }
 
 .RadWizard .rwzSlider {
@@ -884,17 +881,17 @@ a.rwzLink.btn.PrimaryButton {
 }
 
 .RadWizard .rwzContent {
-    white-space: normal;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch
+    /* white-space: normal; */
+    /* overflow: auto; */
+    /* -webkit-overflow-scrolling: touch; */
 }
 
 .RadWizard .rwzStep {
-    display: none
+    /* display: none */
 }
 
 .RadWizard .rwzStep.rwzActive {
-    display: block
+    /* display: block */
 }
 
 .RadWizard .rwzFooter.rwzHidden {
@@ -902,65 +899,66 @@ a.rwzLink.btn.PrimaryButton {
 }
 
 .RadWizard .rwzFooter.rwzShadow {
-    box-shadow: 0 0 10px rgba(0,0,0,0.2)
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
 }
 
 .RadWizard .rwzNav {
-    width: 100%
+    /* width: 100% */
 }
 
 .RadWizard .rwzNav:after {
-    content: "";
-    display: block;
-    clear: both
+    /* content: ""; */
+    /* display: block; */
+    /* clear: both; */
 }
 
 .RadWizard .rwzNav .rwzLI {
-    float: left;
-    margin-right: .769230769231em
+    /* float: left; */
+    /* margin-right: .769230769231em */
 }
 
 .RadWizard .rwzNav .rwzRight {
-    float: right;
-    margin-right: 0;
-    margin-left: .384615384615em
+    /* float: right; */
+    /* margin-right: 0; */
+    /* margin-left: .384615384615em */
 }
 
 .RadWizard .rwzButton {
-    display: block;
-    min-width: 5.76923076923em;    padding: 5px 10px !important;
+    /* display: block; */
+    /* min-width: 5.76923076923em; */
+    padding: 5px 10px !important;
     border: 1px solid transparent !important;
-    font: inherit !important;
+    /* font: inherit !important; */
     line-height: 1.6 !important;
-    border: none!important;
-    cursor: default;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    text-align: center;
-    outline: 0
+    /* border: none!important; */
+    /* cursor: default; */
+    /* -webkit-touch-callout: none; */
+    /* -webkit-user-select: none; */
+    /* -khtml-user-select: none; */
+    /* -moz-user-select: none; */
+    /* -ms-user-select: none; */
+    /* user-select: none; */
+    /* text-align: center; */
+    /* outline: 0; */
 }
 
 .RadWizard .rwzCancelWrapper {
-    margin: 10px 0 -10px;
-    text-align: center;
-    border-top-width: 1px;
-    border-top-style: solid;
-    line-height: 30px
+    /* margin: 10px 0 -10px; */
+    /* text-align: center; */
+    /* border-top-width: 1px; */
+    /* border-top-style: solid; */
+    /* line-height: 30px; */
 }
 
 .RadWizard .rwzCancelBtn {
-    display: inline-block;
-    padding: 5px 10px 7px;
-    text-decoration: underline;
-    cursor: pointer
+    /* display: inline-block; */
+    /* padding: 5px 10px 7px; */
+    /* text-decoration: underline; */
+    /* cursor: pointer; */
 }
 
 .RadWizard .rwzCancelBtn:hover {
-    text-decoration: none
+    /* text-decoration: none; */
 }
 
 .RadWizard_rtl .rwzBreadCrumb .rwzLink {
@@ -986,7 +984,7 @@ a.rwzLink.btn.PrimaryButton {
 }
 
 .RadWizard.rwzHorizontal .rwzBreadCrumb .rwzLink:hover:before {
-    background: inherit
+    /* background: inherit */
 }
 
 .RadWizard.rwzHorizontal .rwzBreadCrumb .rwzLI {
