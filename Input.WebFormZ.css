@@ -52,9 +52,10 @@ html body .RadInput_WebFormZ .riRead,
 html body .RadInput_Read_WebFormZ,
 html body .RadInput_WebFormZ .riDisabled,
 html body .RadInput_Disabled_WebFormZ {
-    border-color: #909090;
+    border-color: transparent !important;
     color: #909090;
-    background: #eee
+    background: transparent;
+    box-shadow: none;
 }
 
 html body .RadInput_WebFormZ .riError,
