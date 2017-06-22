@@ -1,5 +1,6 @@
 /* Reset Fonts for all Telerik Controls */
 
+
 /*
 [id*=Wfz] u,
 [id*=Wfz] ol,
@@ -54,14 +55,14 @@
 #MainHtml [id*=Caption].control-label.Required,
 [id*=AppMultiInstanceAnswer].control-label.Required,
 span.Required {
-    background: none !important;
-    padding-left: 0;
+    background: none!important;
+    padding-left: 10px;
 }
 
 .control-label.Required:before,
 span.Required:before {
     content: " * ";
-    color: red;
+    color: #c00;
     padding-top: 0.2em;
     /* padding-left: 0; */
     position: absolute;
@@ -187,11 +188,12 @@ div[id*="Wfz"].t-row:last-child,
 }
 
 
-/*.rpItem,
-.rpGroup,
-.rpSlide {
-    overflow: visible !important;
-}*/
+/* .RadPanelBar .rpRootGroup, 
+.RadPanelBar .rpGroup, 
+.RadPanelBar .rpItem, 
+.RadPanelBar .rpSlide {
+    overflow: inherit !important;
+} */
 
 
 /* hide expand mode */
