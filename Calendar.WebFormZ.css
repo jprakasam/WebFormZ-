@@ -400,3 +400,7 @@ table.RadCalendarTimeView_WebFormZ td {
 .RadCalendar_WebFormZ .rcTitlebar .rcFastNext {
     order: 5;
 }
+
+.rcCalPopup::before {
+    content: "\1F4C5" !important;
+}
